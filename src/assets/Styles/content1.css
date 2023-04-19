@@ -1,35 +1,32 @@
 /* các css mới tử backender thêm */
-.content-1 {
-	height:100vh;
-}
-
-.btn-timviec:hover a{
-	color:black !important;
-}
-
-/* các css cũ */
-.mask {
-	background: #b0d4b8; 
-   	height: 100%
-}
-
-.mask h1 {
+#slider {
+	width: 100%;
+	height: 100vh;
+	background: #b0d4b8;
+  }
+  
+  #slider .container {
+	padding-top: 180px;
+  }
+  
+  #slider h1 {
 	margin: 0 0 10px 0;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 56px;
 	color: #fff;
-}
-
-.mask h2 {
+  }
+	
+  #slider h2 {
 	color: rgba(255, 255, 255, 0.6);
 	margin-bottom: 50px;
 	font-size: 24px;
-}
-
-.mask .btn-start {
+  }
+  
+  #slider .btn-start {
+	font-family: "Jost", sans-serif;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 16px;
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 10px 28px 11px 28px;
@@ -37,8 +34,78 @@
 	transition: 0.5s;
 	margin: 10px 0 0 0;
 	color: #fff;
-	background-color: #95C6A0;
+	background-color: #7eb98b;
   }
+  
+  @media (max-width: 991px) {
+	#slider {
+	  /* height: 100vh; */
+	  text-align: center;
+	}
+	
+	  /* #slider .animated {
+		animation: none;
+	  } */
+	
+	#slider .slider-img {
+	  text-align: center;
+	}
+	
+	#slider .slider-img img {
+	  width: 50%;
+	}
+  }
+	
+  @media (max-width: 768px) {
+	#slider h1 {
+	  font-size: 28px;
+	  line-height: 36px;
+	}
+  
+	#slider h2 {
+	  font-size: 18px;
+	  line-height: 24px;
+	  margin-bottom: 30px;
+	}
+  
+	#slider .slider-img img {
+	  width: 70%;
+	}
+  }
+	
+  @media (max-width: 575px) {
+	#slider .slider-img img {
+	  width: 80%;
+	}
+  
+	#slider .btn-start {
+	  font-size: 16px;
+	  padding: 10px 24px 11px 24px;
+	}
+  }
+
+@media (max-width: 768px) {
+  #slider h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #slider h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #slider .slider-img img {
+    width: 70%;
+  }
+}
+  
+@media (max-width: 575px) {
+  #slider .slider-img img {
+    width: 80%;
+  }
+}
 
 
 /* .brand{
@@ -47,6 +114,7 @@
 	font-size: 100px;
 	line-height: 155px;
 }
+
 .tieu-chi{
 	font-family: 'Ink Free', sans-serif;
 	height: 62px;
@@ -55,7 +123,7 @@
 	margin-top: -35px;
 } */
 
-.search-content{
+/* .search-content{
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
@@ -80,7 +148,7 @@
 	background-color: #000;
 	width: 120px;
 
-}
+} */
 /* .btn-khamphathem{
 	background-color: #000;
 	text-transform: uppercase;
@@ -90,7 +158,7 @@
 	line-height: 55px;
 	
 } */
-#myInput, #myInput1{
+/* #myInput, #myInput1{
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -114,4 +182,4 @@
 
 .inline-search-form{
 	position: relative;
-}
+} */
