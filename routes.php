@@ -16,7 +16,7 @@ if (isset($_GET["dangviec"])){ //admin
 } else
 if (isset($_GET["taocv"])){
     if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap"){
-        Header("location: https://duongdang2003.github.io/Web-cv-icon/");
+        Header("location: ./src/Views/user/createcv.php");
     }else{
         header("Location: ./src/Controllers/C_SignIn.php");
     }
