@@ -16,24 +16,73 @@
                 <div class="form-group col-sm-4">
                     <label for="linhvuc">Lĩnh Vực</label>
                     <select name="linhvuc" class="form-control" id="linhvuc">
-                        <option>Công nghệ thông tin</option>
-                        <option>Viễn thông</option>
-                        <option>Marketing / Truyền thông / Quảng cáo</option>
-                        <option>Nhà hàng / Khách sạn</option>
-                        <option>Thời trang</option>
-                        <option>Internet / Online</option>
-                        <option>Bất động sản</option>
-                        <option>Dược phẩm / Y tế / Công nghệ sinh học</option>
-                        <option>Kế toán / Kiểm toán</option>
-                        <option>Kinh doanh</option>
-                        <option>Giáo dục</option>
-                        <option>Văn phòng</option>
+                        <option>An toàn lao động</option>
+                        <option>Bán hàng kỹ thuật</option>
+                        <option>Bán lẻ / bán sỉ</option>
+                        <option>Báo chí / Truyền hình</option>
                         <option>Bảo hiểm</option>
-                        <option>Luật</option>
-                        <option>Giải trí</option>
-                        <option>Agency</option>
-                        <option>Tài chính / Ngân Hàng</option>
-                        <option>Khác</option>
+                        <option>Bảo trì / Sửa chữa</option>
+                        <option>Bất động sản</option>
+                        <option>Biên / Phiên dịch</option>
+                        <option>Bưu chính - Viễn thông</option>
+                        <option>Chứng khoán / Vàng / Ngoại tệ</option>
+                        <option>Cơ khí / Chế tạo / Tự động hóa</option>
+                        <option>Công nghệ cao</option>
+                        <option>Công nghệ Ô tô</option>
+                        <option>Công nghệ thông tin</option>
+                        <option>Dầu khí/Hóa chất</option>
+                        <option>Dệt may / Da giày</option>
+                        <option>Địa chất / Khoáng sản</option>
+                        <option>Dịch vụ khách hàng</option>
+                        <option>Điện / Điện tử / Điện lạnh</option>
+                        <option>Điện tử viễn thông</option>
+                        <option>Du lịch</option>
+                        <option>Dược phẩm / Công nghệ sinh học</option>
+                        <option>Giáo dục / Đào tạo</option>
+                        <option>Hàng cao cấp</option>
+                        <option>Hàng gia dụng</option>
+                        <option>Hàng hải</option>
+                        <option>Hàng không</option>
+                        <option>Hàng tiêu dùng</option>
+                        <option>Hành chính / Văn phòng</option>
+                        <option>Hoá học / Sinh học</option>
+                        <option>Hoạch định/Dự án</option>
+                        <option>In ấn / Xuất bản</option>
+                        <option>IT Phần cứng / Mạng</option>
+                        <option>IT phần mềm</option>
+                        <option>Kế toán / Kiểm toán</option>
+                        <option>Khách sạn / Nhà hàng</option>
+                        <option>Kiến trúc</option>
+                        <option>Kinh doanh / Bán hàng</option>
+                        <option>Logistics</option>
+                        <option>Luật/Pháp lý</option>
+                        <option>Marketing / Truyền thông / Quảng cáo</option>
+                        <option>Môi trường / Xử lý chất thải</option>
+                        <option>Mỹ phẩm / Trang sức</option>
+                        <option>Mỹ thuật / Nghệ thuật / Điện ảnh</option>
+                        <option>Ngân hàng / Tài chính</option>
+                        <option>Ngành nghề khác</option>
+                        <option>NGO / Phi chính phủ / Phi lợi nhuận</option>
+                        <option>Nhân sự</option>
+                        <option>Nông / Lâm / Ngư nghiệp</option>
+                        <option>Phi chính phủ / Phi lợi nhuận</option>
+                        <option>Quản lý chất lượng (QA/QC)</option>
+                        <option>Quản lý điều hành</option>
+                        <option>Sản phẩm công nghiệp</option>
+                        <option>Sản xuất</option>
+                        <option>Spa / Làm đẹp</option>
+                        <option>Tài chính / Đầu tư</option>
+                        <option>Thiết kế đồ họa</option>
+                        <option>Thiết kế nội thất</option>
+                        <option>Thời trang</option>
+                        <option>Thư ký / Trợ lý</option>
+                        <option>Thực phẩm / Đồ uống</option>
+                        <option>Tổ chức sự kiện / Quà tặng</option>
+                        <option>Tư vấn</option>
+                        <option>Vận tải / Kho vận</option>
+                        <option>Xây dựng</option>
+                        <option>Xuất nhập khẩu</option>
+                        <option>Y tế / Dược</option>
                     </select>
                 </div>
                 <div class="form-group col-sm-4">
