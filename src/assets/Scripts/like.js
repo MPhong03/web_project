@@ -88,7 +88,6 @@ $(function () {
 function getDataNTV(data) {
   let ele = $("#wrapSaveNTV")
   ele.html("");
-  let res = "";
   for (let i = 0; i < data.length; i++) {
     let loaicongviec = "Bán thời gian";
     if (data[i]["loaicongviec"] == 1) {
@@ -104,37 +103,32 @@ function getDataNTV(data) {
       <div class="card card-format-border-left">
           <div class="card-body">
                   <div class="row">
-                      <div class="col-sm-12 col-img-text">
-                          <div class="col-img">
-                              <span>
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 84 84">
-                                      <defs>
-                                          <pattern id="pattern${i}" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 229 220">
-                                              <image width="200" height="160" xlink:href="${data[i]["linkava"]}" />
-                                          </pattern>
-                                      </defs>
-                                      <rect id="" width="84" height="84" fill="url(#pattern${i})" />
-                                  </svg>
-                              </span>
-                          </div>
-                          <div class="col-text">
-                              <h5 class="card-title format-text-bold">${data[i]["hoten"]}</h5>
-                              <h6 class="card-subtitle mb-2">${data[i]["congviec"]}</h6>
-                          </div>
-                      </div>
-                      <div class="col-sm-12">
-                          <div class="col-time">
-                              <span><img class="img-time" src="../../../src/assets/Images/time.jpg" alt=""></span>
-                              <span class="card-text p-time">${loaicongviec}</span>
-                          </div>
-                      </div>
-                      <div class="col-sm-12">
-                          ${tagkinang}
-                      </div>
-                      <div class="col-sm-8 col-diadiem">
-                          <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
-                                  <span class="card-text p-diadiem">Thành Phố ${data[i]["thanhpho"]}</span>
-                      </div>
+                    <div class="col-lg-4">
+                        <img class="card-img col-lg-3" src="${data[i]["linkava"]}" alt="">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <h5 class="card-title format-text-bold">${data[i]["hoten"]}</h5>
+                        <h6 class="card-subtitle mb-2">${data[i]["congviec"]}</h6>
+                        <div class="col-lg-12 d-flex flex-row justify-content-between">
+                            <div>
+        
+                                <span><i class="fa fa-buildings"></i>${loaicongviec}</span>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-8">
+        
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
+                            <span class="card-text">Thành Phố ${data[i]["thanhpho"]}</span>
+                            
+                        </div>
+        
+                        <div class="col-lg-12">
+                            ${tagkinang}
+                        </div>
+        
+                    </div>
                   </div>
               </div>
           </div>
@@ -153,5 +147,5 @@ function getDataNTV(data) {
     window.location.href = `../admin/pageinfoAdmin.php?idbaidang=${id}&idcongty=${idcongty}`;
   }
   function gotoHomepageClient(id){
-    window.location.href = `../user/pageinfoUser.php?id=${id}`;
+    window.location.href = `../user/pageinfouser.php?id=${id}`;
   }
