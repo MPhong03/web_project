@@ -9,7 +9,7 @@
                                 <div class="row g-0">
                                     <div class="col-md-4 gradient-custom text-center text-white">
                                         <div class="img-userxinviec-right">
-                                            <img class="img-account-profile rounded-circle mb-2 my-5" style="height: 150px;" src="../../../assets/Images/18-F.png" alt="">
+                                            <img class="img-account-profile rounded-circle mb-2 my-5" style="height: 170px; width:170px;" src="../../../assets/Images/18-F.png" alt="">
                                         </div>
                                         <h5>PHẠM NHẬT QUỲNH</h5>
                                         <p>Lập trình viên</p>
