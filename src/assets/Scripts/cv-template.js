@@ -11,8 +11,8 @@
                 //headerElement.classList.replace(className, #000);
             });
             //set màu cho tên và chuyên ngành khi bg-light
-            var hotenElement = document.getElementById('hoten');
-            var chuyennganhElement = document.getElementById('chuyennganh');
+            var hotenElement = document.getElementById('hotenCV');
+            var chuyennganhElement = document.getElementById('chuyennganhCV');
             var gioithieuElement = document.getElementById('gioithieu');
             // Thay đổi màu chữ của phần tử h1
             hotenElement.style.color = backgroundColor === 'bg-light' ? 'black' : 'white';
