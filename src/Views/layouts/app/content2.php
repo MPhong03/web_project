@@ -3,71 +3,65 @@
     <div class="container pt-0">
       <div class="row">
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
+  
+  <div id="box-find" class="box-find mt-4 mg-search-form" role="search">
+    <div class="container pt-3 pb-5">
 
-  <div id="box-find" class="box-find mt-4" role="search">
-    <form action="">
-      <div class="container pt-3 pb-5" id="jobsearch">
-        <div class="box-form">
-          <div class="mb-2 form-group enter-text">
-            <i class="bi bi-search"></i>
-            <input id="myInput" type="text" class="form-input form-control" placeholder="Nhập tên công ty, vị trí, từ khóa....">
+      <form action="" class="search-form" id="jobsearch" method="get">
+        <div class="row inline-search-form">
+          <div class="col-sm-12 seach-box">
+            <div class="input-group form-container mb-3">
+              <span class="input-group-text text-tiemkiem" id="inputGroup-sizing-default">
+                <i class="bi bi-search"></i>
+              </span>
+              <input id="myInput" type="text" name="search-work" class="form-control search-input"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value
+                placeholder="Nhập tên công ty" autocomplete="off">
+              <!-- <span><i class="fa fa-search" aria-hidden="true"></i></span> -->
+            </div>
           </div>
-
-          <div class="mb-2 form-group enter-text">
-            <i class="bi bi-map"></i>
-            <!-- <input type="text" class="form-control" placeholder="Vị trí">\ -->
-            <select id="myInput1" name="location-search" class="form-select form-control col-lg-2"
-              aria-label="Default select example">
-              <option selected value="0">Tất cả địa điểm</option>
-              <option value="1">Hà Nội</option>
-              <option value="2">Hồ Chí Minh</option>
-              <option value="3">Nước ngoài</option>
-            </select>
+          <div class="col-sm-12 seach-box">
+            <div class="input-group form-container mb-3">
+              <span class="input-group-text text-diadiem" id="inputGroup-sizing-default">
+                <i class="bi bi-pin-map-fill"></i>
+              </span>
+              <input id="myInput1" type="text" name="search-location" class="form-control search-input"
+                placeholder="Địa điểm" autocomplete="off">
+              <!-- <span><i class="fa fa-map-marker" aria-hidden="true"></i><span> -->
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <button class="btn btn-dark form-control-plaintext text-center btn-timviec w-100" tabindex="-1" role="button" type="submit">Tìm
+              Việc Ngay</button>
           </div>
         </div>
-
-        <div class="rest-form mb-3">
-          <a href=""></a>
-          <i class="bi bi-arrow-counterclockwise"></i>
-          <input class="reset border-0 bg-white" type="reset" value="Reset">
-        </div>
-
-
-        <div class="">
-          <a href="#showJob" class="text-light">
-            <button onclick="searchFilterFromUser()" name="search-main" value="1"
-              class="btn btn-dark w-100 form-control-plaintext text-center btn-timviec" tabindex="-1" role="button" type="submit">
-              Tìm Việc Ngay
-            </button>
-          </a>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 
   <div class="container container-content-3">
