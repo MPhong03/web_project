@@ -23,7 +23,7 @@ class FormLogin
       <div class="container-fluid">
         <div class="row justify-content-center">
 
-          <div class="col-md-6 col-lg-6 d-none d-md-block">
+          <div class="col-md-6 col-lg-6 d-none d-md-block vh-100">
             <img class="img-fluid h-100" src="../assets/Images/ad-form.gif" alt="adv">
           </div>
 
