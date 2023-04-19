@@ -25,7 +25,7 @@ function showAllDataUser(data) {
                         <div class="row g-0">
                             <div class="col-md-4 gradient-custom text-center text-white">
                                 <div class="img-userxinviec-right">
-                                    <img class="img-account-profile rounded-circle mb-2 my-5" style="height: 150px;" src="${data.linkava}" alt="">
+                                    <img class="img-account-profile rounded-circle mb-2 my-5" style="height: 170px; width:170px;" src="${data.linkava}" alt="">
                                 </div>
                                 <h5>${data.hoten}</h5>
                                 <p>${data.congviec}</p>
