@@ -53,7 +53,7 @@ foreach ($tagkinang as $tag) {
             </div>
             <div class="col-xl-8">
                 <div class="card shadow mb-4">
-                    <div class="card-header">Thông tin người tìm việc</div>
+                  <div class="card-header fw-bold text-center"><h4>Thông tin người tìm việc</h4></div>
                     <div class="card-body">
                         <form>
                             <!-- Form Group (Thông tin cá nhân)-->
