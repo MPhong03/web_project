@@ -1,48 +1,26 @@
 <div class="content-1">
-    <div class="bg-image shadow-1-strong rounded search-content" style="background-image: url('../../../src/assets/Images/homepage_background.jpg');">
+    <div class="bg-image shadow-1-strong rounded search-content">
         <div class="mask">
             <div class="d-flex justify-content-center h-100">
                 <div class="container container-content-1">
-                    <div class="row mt-5">
-                        <div class="col-sm-12 mg-brand">
-                            <h1 class="brand text-white mb-0 text-center">FINDWORK</h1>
-                        </div>
-                        <div class="col-sm-12">
-                            <h4 class="tieu-chi text-center text-white">find your own work</h4>
-                        </div>
-                        <div class="col-sm-12 mg-search-form" role="search">
-                            <div class="search-form" id="jobsearch">
-                                <div class="row inline-search-form">
-                                    <div class="col-sm-5 seach-box">
-                                        <div class="input-group form-container mb-3">
-                                            <span class="input-group-text text-tiemkiem" id="inputGroup-sizing-default">Tìm kiếm</span>
-                                            <input id="myInput" type="text" name="search-work" class="form-control search-input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value placeholder="chức danh, từ khóa hoặc công ty: fpt, google" autocomplete="off">
-                                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-5 seach-box">
-                                        <div class="input-group form-container mb-3">
-                                            <span class="input-group-text text-diadiem" id="inputGroup-sizing-default">Địa điểm</span>
-                                            <input id="myInput1" type="text" name="search-location" class="form-control search-input" placeholder="tỉnh hoặc thành phố, VD: đà nẵng" autocomplete="off">
-                                            <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <a href="#showJob" style="text-decoration: none; color:white;">
-                                        <button onclick="searchFilterFromUser()" name="search-main" value="1" class="btn btn-dark btn-outline-light btn-timviec" tabindex="-1" role="button" type="submit">
-                                                Tìm việc
-                                        </button>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="row" style="margin-top: 20vh;">
+                        <div
+                            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pb-4 pt-lg-0 order-2 order-lg-1">
+                            <h1>Khám phá sự nghiệp mơ ước của bạn</h1>
+                            <h2>Bắt đầu tìm kiếm với chúng tôi!</h2>
+                            <div class="d-flex justify-content-center justify-content-lg-start">
+                                <a href="#" class="btn-start form-control-plaintext nav-link border-0 text-center"
+                                    style="width: 180px; padding: 15px 0;">Bắt đầu ngay</a>
                             </div>
                         </div>
-                        <div class="col-sm-12 text-center">
-                            <a class="btn btn-dark btn-outline-light btn-khamphathem" tabindex="-1" role="button" href="#content-2">Khám phá thêm</a>
+
+                        <div class="col-lg-6 order-1 order-lg-2 slider-img">
+                            <img src="src/assets/Images/logo.png" class="img-fluid animated" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
