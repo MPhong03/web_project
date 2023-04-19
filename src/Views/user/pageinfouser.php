@@ -94,11 +94,11 @@ if ($_SESSION["who"] == 'Admin') {
 		// echo $_GET["id"];
 		?>
 			<script>
-				getAllInfoUserByIdURL(<?php echo $_GET["id"] ?>);
-				// setTimeout(function() {
-				// 	console.log(id);
-					
-				// }, 350)
+				
+				setTimeout(function() {
+				 	console.log(id);
+					getAllInfoUserByIdURL(<?php echo $_GET["id"] ?>);
+				}, 350)
 			</script>
 		<?php
 	}
