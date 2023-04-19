@@ -42,7 +42,7 @@ foreach ($tagkinang as $tag) {
                     <div class="card-header">Ảnh đại diện</div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-account-profile rounded-circle mb-2" style="height: 150px;" src="<?php echo $data["linkava"] ?>" alt="">
+                        <img class="img-account-profile rounded-circle mb-2" style="height: 170px; width:170px;" src="<?php echo $data["linkava"] ?>" alt="">
                         <div class="small font-italic text-muted mb-4">Vui lòng chỉ chọn file JPG hoặc PNG</div>
                         <div class="upload-img">
                             <button title="Đổi Avatar" class="btn btn-dark" id="avatarInfo" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Đổi ảnh đại diện
