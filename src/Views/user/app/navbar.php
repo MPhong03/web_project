@@ -1,30 +1,27 @@
-<div class="navbar-content fixed-top" id="navbar-content">
-    <nav class="navbar navbar-expand-lg navbar-dark px-4 format-nav">
-        <div class="container">
-            <a class="navbar-brand" href="../../../../index.php">FINDWORK</a>
+<div class="navbar-content fixed-top" id="navbar-content" data-scrollto-offset="0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="../../../../index.php">FINDWORK</a> -->
+            <a class="navbar-brand" href="index.php">
+				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
+			</a>
             <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- RIGHT -->
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../../../routes.php?timviec">Tìm việc</a>
+                        <a class="nav-link" aria-current="page" href="../../../../routes.php?timviec">Tìm việc</a>
                         <!--./src/Controllers/C_SignIn.php-->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="../../../../routes.php?taocv">Tạo CV</a>
+                        <a class="nav-link" href="../../../../routes.php?taocv">Tạo CV</a>
                     </li>
                 </ul>
-                <!-- <ul class="navbar-nav mt-2 mt-lg-0" id="identity_user">
-                    <a class="nav-link active format-name-user" href="#">William Shakespeare</a>
-                    <span>
-                        <img class="format-img-user" src="../../../../src/assets/Images/18-F.png" alt="avatar"></span>
-                    <div class="navbar-img-notice">
-                        <span>
-                            <img class="format-img-notice" src="../../../../src/assets/Images/ic_notifications_none_24px.png" alt="notice">
-                        </span>
-                    </div>
-                </ul> -->
+
+                <!-- LEFT -->
                 <ul class="navbar-nav mt-2 mt-lg-0" id="identity_user">
                     <a class="nav-link active format-name-user">William Shakespeare</a>
                     <div class="filter-dropdown-container-user">
@@ -35,7 +32,7 @@
                             <li class="filter-dropdownlistItem">
                                 <a href="./capnhatdoanhnghiep.php" class="filter-dropdownlistitemLink">Chỉnh sửa thông tin</a>
                             </li>
-                            <li class="filter-dropdownlistItem ormat-border-top">
+                            <li class="filter-dropdownlistItem format-border-top">
                                 <a href="./duyetcongviec.php" class="filter-dropdownlistitemLink">Duyệt công việc</a>
                             </li>
                             <li class="filter-dropdownlistItem format-border-top">
