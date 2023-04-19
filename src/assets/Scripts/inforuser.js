@@ -20,7 +20,7 @@ function showAllDataUser(data) {
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-8 mb-lg-0">
-                    <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="card mb-3 shadow" style="border-radius: .5rem;">
                         <div class="row g-0">
                             <div class="col-md-4 gradient-custom text-center text-white">
                                   <div class="img-userxinviec-right">
