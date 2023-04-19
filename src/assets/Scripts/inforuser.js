@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // getAllInfoUser();
+  getAllInfoUser();
 });
 function getAllInfoUser() {
   $.post("../../../src/Controllers/C_InfoUser.php", {
