@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Đăng kí</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
   <link href="../../../src/assets/Styles/style.css" rel="stylesheet">
 </head>
@@ -28,24 +28,24 @@
           <h1 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h1><br>
           <div class="form-group">
             <label for="username">Tài khoản</label>
-            <input name="taikhoan" type="text" class="form-control py-3 forTV" id="username" required>
+            <input name="taikhoan" type="text" class="form-control forTV" id="username" required>
             <div class="invalid-feedback">Vui lòng nhập tài khoản.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="password" class="label">Mật khẩu</label>
-            <input name="matkhau" type="password" class="form-control py-3 forTV" id="password" required>
+            <input name="matkhau" type="password" class="form-control forTV" id="password" required>
             <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="email">Email</label>
-            <input name="email" type="email" class="form-control py-3 forTV" id="email" required>
+            <input name="email" type="email" class="form-control forTV" id="email" required>
             <div class="invalid-feedback">Vui lòng nhập email.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="number">Số điện thoại</label>
-            <input name="sdt" type="number" class="form-control py-3 forTV" id="number" required>
+            <input name="sdt" type="number" class="form-control forTV" id="number" required>
             <div class="invalid-feedback">Vui lòng nhập số điện thoại.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label>Bạn là</label>
             <select class="form-control required" id="select" name="type" required>
@@ -53,20 +53,20 @@
               <option value="TD" style="color:black !important;">Nhà tuyển dụng</option>
             </select>
             <div class="invalid-feedback">Vui lòng chọn.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="company">Tên doanh nghiệp</label>
-            <input name="tendoanhnghiep" type="text" class="form-control py-3 forTD" id="company" disable>
+            <input name="tendoanhnghiep" type="text" class="form-control forTD" id="company" disable>
             <div class="invalid-feedback">Vui lòng nhập tên doanh nghiệp.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="address">Địa chỉ</label>
-            <input name="diachi" type="text" class="form-control py-3 forTD" id="address" disable>
+            <input name="diachi" type="text" class="form-control forTD" id="address" disable>
             <div class="invalid-feedback">Vui lòng nhập địa chỉ.</div>
-          </div>
+          </div><br>
           <div class="form-group">
             <label for="website">Website</label>
-            <input name="website" type="text" class="form-control py-3 forTD" id="website" disable>
+            <input name="website" type="text" class="form-control forTD" id="website" disable>
             <div class="invalid-feedback">Vui lòng nhập website.</div>
           </div><br>
 

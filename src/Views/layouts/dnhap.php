@@ -11,9 +11,9 @@ class FormLogin
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Đăng nhập</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
       <!-- My CSS and JQuery -->
       <link href="../assets/Styles/style.css" rel="stylesheet">
@@ -34,14 +34,14 @@ class FormLogin
               <h1 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h1><br>
               <div class="form-group">
                 <label for="username">Tài khoản</label>
-                <input name="taikhoan" value='<?= $previousUser ?>' type="text" class="form-control py-4" id="username" required>
+                <input name="taikhoan" value='<?= $previousUser ?>' type="text" class="form-control" id="username" required>
                 <div class="invalid-feedback">Vui lòng nhập tài khoản.</div>
-              </div>
+              </div><br>
               <div class="form-group mb-0">
                 <label for="password" class="label">Mật khẩu</label>
-                <input name='matkhau' value='<?= $previousPass ?>' type="password" class="form-control py-4" id="password" required>
-                <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div><br>
-              </div>
+                <input name='matkhau' value='<?= $previousPass ?>' type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
+              </div><br>
               <div class="form-group">
                 <label for="select">Bạn là</label>
                 <select class="form-control required" id="select" name="who" required>
