@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  getAllInfoUser();
+  // getAllInfoUser();
 });
 function getAllInfoUser() {
   $.post("../../../src/Controllers/C_InfoUser.php", {
     type: 1,
   }).done(function (data, status) {
     data = JSON.parse(data);
-    console.log(data);
+    // console.log(data.hoten);
     // console.log(status);
     if (status) {
       showAllDataUser(data);
@@ -14,6 +14,7 @@ function getAllInfoUser() {
   });
 }
 function showAllDataUser(data) {
+  console.log("Check",data.hoten);
   let ele = $("#content").children().children();
   let res = `
       <div class="min-vh-100"">
@@ -106,22 +107,11 @@ function getAllInfoUserByIdURL(id) {
     iduser: id,
   }).done(function (data, status) {
     data = JSON.parse(data);
-    console.log(data);
+    // console.log("Data:", id);
     // console.log(status);
     if (status) {
       showAllDataUser(data);
     }
   });
 }
-// <div class="col-md-12 col-tuyenngay">
-//     <a class="btn btn-dark btn-outline-light btn-tuyenngay" tabindex="-1" role="button" href="#">Tuyển ngay</a>
-//     <button class="btn-luuyeu-thich" id="btn-luuyeuthich" aria-haspopup="true" aria-expanded="false">
-//         <span>
-//             <svg class="img-ungtuyenngay" width="50" height="40" role="img" aria-label="biểu tượng-lưu" focusable="false" viewBox="0 0 18 18">
-//                 <g>
-//                     <path d="M12.38,2.25A4.49,4.49,0,0,0,9,3.82,4.49,4.49,0,0,0,5.63,2.25,4.08,4.08,0,0,0,1.5,6.38c0,2.83,2.55,5.15,6.41,8.66L9,16l1.09-1C14,11.52,16.5,9.21,16.5,6.38A4.08,4.08,0,0,0,12.38,2.25ZM9.08,13.91L9,14l-0.08-.08C5.35,10.68,3,8.54,3,6.38A2.56,2.56,0,0,1,5.63,3.75,2.93,2.93,0,0,1,8.3,5.52H9.7a2.91,2.91,0,0,1,2.67-1.77A2.56,2.56,0,0,1,15,6.38C15,8.54,12.65,10.68,9.08,13.91Z"></path>
-//                 </g>
-//             </svg>
-//         </span>
-//     </button>
-// </div>
+

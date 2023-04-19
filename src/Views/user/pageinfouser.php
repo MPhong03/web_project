@@ -92,13 +92,15 @@ require("check.php");
 if ($_SESSION["who"] == 'Admin') {
 	if (isset($_GET["id"])) {
 		// echo $_GET["id"];
-?>
-		<script>
-			setTimeout(function() {
-				getAllInfoUserByIdURL(<? echo $_GET["id"] ?>);
-			}, 350)
-		</script>
-<?php
+		?>
+			<script>
+				getAllInfoUserByIdURL(<?php echo $_GET["id"] ?>);
+				// setTimeout(function() {
+				// 	console.log(id);
+					
+				// }, 350)
+			</script>
+		<?php
 	}
 }
 ?>
