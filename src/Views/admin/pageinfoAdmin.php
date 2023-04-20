@@ -4,8 +4,6 @@ require_once("./app/getDataAdminNow.php");
 if (isset($_GET["idcongty"]) && $_SESSION["who"] == 'Client') {
     $data = returnAll($_GET["idcongty"]);
 }
-$phucloi = $data['phucloi'];
-$gioithieu = $data["TenCongTy"] . '<br>' . $data["motacongty"] . '<br>' . $data["website"] . '<br>' . $data["linhvuc"] . '<br>' . $data["diachi"] . '<br>' . $data["sdt"] . '<br>' . $data["email"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +31,7 @@ $gioithieu = $data["TenCongTy"] . '<br>' . $data["motacongty"] . '<br>' . $data[
     <link rel="stylesheet" href="../../../src/assets/Styles/reponsive.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Find Work</title>
+    <title>SEEKER</title>
 </head>
 
 <body>
@@ -63,47 +61,47 @@ $gioithieu = $data["TenCongTy"] . '<br>' . $data["motacongty"] . '<br>' . $data[
         <?php
         require_once("./app/navbar.php");
         ?>
-        <div class="header d-flex justify-content-center">
-            <img src="../../assets/Images/wall.jpg" alt="Snow" style="width:100%; height: 350px">
-            <div class="centered" style="height: 200px; width: 550px; background-color: white ">
-            </div>
-            <div class="img-center">
-                <img id="avatarInfo" class="rounded-circle" style="width:180px; height: 180px" src="<?php echo $data["linkava"] ?>" alt="">
-            </div>
-            <h3 class="format-nameComapy"><?php echo $data["TenCongTy"] ?></h3>
-            <h6 class="gioithieucongty">Chào mừng bạn đã đến với trang thông tin của công ty chúng tôi</h6>
-        </div>
-        <!-- liên hệ -->
-        <div class="container d-flex justify-content-center">
-            <div class="contact">
-                <ul class="info">
-                    <li><i class="bi bi-telephone-fill"></i>&nbsp <b>Số điện thoại:</b><?php echo $data["sdt"] ?></li>
-                    <li><i class="bi bi-envelope-fill"></i>&nbsp <b>Email:</b><?php echo $data["email"] ?></li>
-                    <li><i class="bi bi-geo-alt-fill"></i>&nbsp <b>Địa chỉ:</b><?php echo $data["diachi"] ?></li>
-                    <i class="bi bi-twitter"></i>&nbsp<i class="bi bi-instagram"></i>&nbsp
-                    <i class="bi bi-pinterest"></i>&nbsp<i class="bi bi-linkedin"></i>
-                </ul>
-            </div>
-        </div>
         <div id="content2">
-            <div class="container">
-                <div id="navAdmin" class="format-col-option nav nav-tabs" style="border:none;">
-                    <a onclick="vieclam()" class="format-text nav-link active" href="#">Việc làm</a>
-                    <a onclick="gioithieu('<?php echo $gioithieu ?>')" class="format-text nav-link" href="#">Giới thiệu công ty</a>
-                    <a onclick="phucloi(`<?php echo $phucloi ?>`)" class="format-text nav-link" href="#">Phúc lợi</a>
+            <div class="format-col-info">
+                <div class="header d-flex justify-content-center">
+                    <img src="../../assets/Images/wall.jpg" alt="Snow" style="width:100%; height: 350px">
+                    <div class="centered" style="height: 200px; width: 550px; background-color: white ">
+                    </div>
+                    <div class="img-center">
+                        <img id="avatarInfo" class="rounded-circle" style="width:180px; height: 180px" src="<?php echo $data["linkava"] ?>" alt="">
+                    </div>
+                    <h3 class="format-nameComapy"><?php echo $data["TenCongTy"] ?></h3>
+                    <h6 class="gioithieucongty">Chào mừng bạn đã đến với trang thông tin của công ty chúng tôi</h6>
                 </div>
-                <hr>
-                <script>
-                    let save = `
-                        <?php
-                        echo $phucloi
-                        ?>`;
-                </script>
-
+                <!-- liên hệ -->
+                <div class="container d-flex justify-content-center">
+                    <div class="contact">
+                        <ul class="info">
+                            <li><i class="bi bi-telephone-fill"></i>&nbsp <b>Số điện thoại:</b><?php echo $data["sdt"] ?></li>
+                            <li><i class="bi bi-envelope-fill"></i>&nbsp <b>Email:</b><?php echo $data["email"] ?></li>
+                            <li><i class="bi bi-geo-alt-fill"></i>&nbsp <b>Địa chỉ:</b><?php echo $data["diachi"] ?></li>
+                            <i class="bi bi-twitter"></i>&nbsp<i class="bi bi-instagram"></i>&nbsp
+                            <i class="bi bi-pinterest"></i>&nbsp<i class="bi bi-linkedin"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="pt-5 ms-3 fw-bold">Công việc</h3>
+            <?php
+            require_once("../../../src/Views/layouts/app/content3.php"); ?>
+            <div class="card mb-4 mt-5 shadow">
+                <div class="card-header fw-bold">Chi tiết công ty</div>
+                <div class="card-body">
+                    <p><i class="bi bi-globe-asia-australia"></i>&nbsp <b>Website:</b>&nbsp<?php echo $data["website"] ?></p>
+                    <p><i class="bi bi-layout-text-sidebar-reverse"></i>&nbsp <b>Lĩnh vực:</b>&nbsp<?php echo $data["linhvuc"] ?></p>
+                    <p><i class="bi bi-piggy-bank-fill"></i>&nbsp <b>Phúc lợi:</b>&nbsp<?php echo $data["phucloi"] ?></p>
+                    <p><i class="bi bi-book-half"></i>&nbsp&nbsp<b>Mô tả:</b>&nbsp<?php echo $data["motacongty"] ?></p>
+                </div>
             </div>
         </div>
         <?php
-        require_once("../../../src/Views/layouts/app/content3.php");
         require_once("../../../src/Views/layouts/app/footer.php");
         ?>
     </div>
