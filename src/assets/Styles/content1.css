@@ -4,6 +4,10 @@
 	height: 100vh;
 	background: #b0d4b8;
   }
+
+  .slider-admin {
+	background-image: url('../Images/bg_ntd.png');
+  }
   
   #slider .container {
 	padding-top: 180px;
@@ -37,15 +41,15 @@
 	background-color: #7eb98b;
   }
   
+  /* TABLET */
   @media (max-width: 991px) {
 	#slider {
-	  /* height: 100vh; */
 	  text-align: center;
 	}
-	
-	  /* #slider .animated {
-		animation: none;
-	  } */
+
+	#slider .container {
+		padding-top: 100px;
+	}
 	
 	#slider .slider-img {
 	  text-align: center;
@@ -55,8 +59,12 @@
 	  width: 50%;
 	}
   }
-	
+
+  /* MOBILE */
   @media (max-width: 768px) {
+	#slider .container {
+		padding-top: 100px;
+	}
 	#slider h1 {
 	  font-size: 28px;
 	  line-height: 36px;
