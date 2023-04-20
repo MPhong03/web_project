@@ -15,7 +15,7 @@ function duyetcongviec(){
       });
 }
 function Data_DuyetCongViec(data){
-    let table1 = $("table#DuocMoi").children("tbody");
+    let table1 = $("table#duyetcongviec").children("tbody");
     let table2 = $("table#daduyet").children("tbody");
     table1.html("");
     table2.html("");
@@ -34,7 +34,11 @@ function Data_DuyetCongViec(data){
                 <p class="fw-normal mb-1">${data[i]["TenCongTy"]}</p>
             </td>
             <td class="format-td">
-
+                <div class="format-td-hoso">
+                    <a class="format-hoso" role="button" href="../../../src/Views/admin/pageinfoadmin.php?idbaidang=${data[i]["MaDangTin"]}" class="btn btn-link  btn-rounded">
+                        Xem bài đăng
+                    </a>
+                </div>
                 <div class="format-td-baidang">
                     <a class="format-baidang" class="aa" role="button" href="../admin/pageinfoAdmin.php?idcongty=${data[i]["MaCongTy"]}" class="btn btn-link btn-rounded">
                         Xem công ty
@@ -73,6 +77,9 @@ function Data_DuyetCongViec(data){
                 <p class="fw-normal mb-1">${data[i]["TenCongTy"]}</p>
             </td>
             <td class="format-td">
+                <div class="format-td-baidang">	
+                    <a class="format-baidang" role="button" href="../../../src/Views/admin/pageinfoadmin.php?idbaidang=${data[i]["MaDangTin"]}" class="btn btn-link  btn-rounded">	
+                        Xem bài đăng
                 <div class="format-td-hoso">
                     <a class="format-hoso" role="button" href="../admin/pageinfoAdmin.php?idcongty=${data[i]["MaCongTy"]}" class="btn btn-link  btn-rounded">
                         Xem công ty
@@ -100,7 +107,7 @@ function yeucautuyendung(){
       });
 }
 function Data_yeucautuyendung(data){
-    let table = $("table#yeucautuyendung").children("tbody");
+    let table = $("table#congviecungtuyen").children("tbody");
     table.html("");
     let resTable ="";
     for (let i = 0; i < data.length; i++){
@@ -124,7 +131,7 @@ function Data_yeucautuyendung(data){
         <td class="format-td">
             <div class="format-td-hoso">
                 <a class="format-hoso" role="button" href="../admin/pageinfoAdmin.php?idbaidang=${data[i]["MaDangTin"]}&idcongty=${data[i]["MaCongTy"]}" class="btn btn-link  btn-rounded">
-                    Xem hồ sơ
+                    Xem bài đăng
                 </a>
             </div>
 

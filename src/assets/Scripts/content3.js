@@ -112,15 +112,15 @@ function show_detail_data(data) {
                     </div>
 
                     <div class="col-sm-12 col-money">
-                        <span><i class="fa fa-eur" aria-hidden="true"></i></span>
+                        <span><i class="bi bi-cash-stack"></i></span>
                         <p class="card-text p-money">${formatter.format(data[0]["luong"])}/tháng</p>
                     </div>
                     <div class="col-md-12 col-lg-7 col-diadiem">
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
+                        <span><i class="bi bi-geo-alt-fill"></i><span>
                                 <p class="card-text p-diadiem">${data[0]["thanhpho"]}</p>
                     </div>
                     <div class="col-md-12 col-lg-5 col-ungtuyenngay">
-                        <a class="btn btn-dark btn-outline-light btn-ungtuyenngay" tabindex="-1" role="button" href="../../../../routes.php?ungtuyenngay=${data[0]["MaDangTin"]}">Ứng tuyển ngay</a>
+                        <a class="btn btn-success btn-outline-light" tabindex="-1" role="button" href="../../../../routes.php?ungtuyenngay=${data[0]["MaDangTin"]}">Ứng tuyển ngay</a>
                         <a class="btn-luuyeu-thich" id="btn-luuyeuthich" aria-haspopup="true" aria-expanded="false" href="../../../../routes.php?yeuthich=${data[0]["MaDangTin"]}">
                             <span>
                                 <svg class="img-ungtuyenngay" width="50" height="40" role="img" aria-label="biểu tượng-lưu" focusable="false" viewBox="0 0 18 18">
