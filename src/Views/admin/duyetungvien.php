@@ -55,7 +55,7 @@ require("check.php");
                                     <thead class="format-thead-background bg-success text-white">
                                         <tr class="format-text">
                                             <th></th>
-                                            <th>Tên</th>
+                                            <th>Tê</th>
                                             <th>Công việc</th>
                                             <th>Chi tiết</th>
                                             <th>Duyệt</th>
