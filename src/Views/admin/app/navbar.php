@@ -1,10 +1,15 @@
-<div class="navbar-content fixed-top" id="navbar-content">
-    <nav class="navbar navbar-expand-lg navbar-dark px-4 format-nav">
-        <div class="container">
-            <a class="navbar-brand" href="../../../../index.php">FINDWORK</a>
-            <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<div class="navbar-content fixed-top" id="navbar-content" data-scrollto-offset="0">
+	<nav class="navbar navbar-expand-lg navbar-light px-4">
+		<div class="container-fluid">
+			<!-- <a class="navbar-brand" href="../../../index.php">FINDWORK</a> -->
+			<a class="navbar-brand" href="index.php">
+				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
+			</a>
+
+			<button class="navbar-toggler border-0" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
