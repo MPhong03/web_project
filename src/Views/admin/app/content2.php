@@ -1,4 +1,34 @@
 <div class="content-3" id="content-3">
+  <div class="brands" id="brands">
+    <div class="container pt-0">
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="content-3" id="content-3">
   <div class="container container-content-3">
     <div class="row">
       <div class="col-12">
