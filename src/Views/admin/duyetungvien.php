@@ -37,9 +37,6 @@ require("check.php");
         #navbar-content {
             position: sticky;
         }
-        h4{
-            color:#44A682;
-        }
     </style>
     <div id="main" class="h-100">
         <?php
