@@ -3,9 +3,9 @@
 function returnAll($id)
 {
     require("../../connection.php");
-    $sql = $conn->query("SELECT * FROM CongTy INNER JOIN Admin 
-        ON CongTy.ID_CongTy = Admin.ID_CongTy
-        WHERE CongTy.ID_CongTy = '$id';");
+    $sql = $conn->query("SELECT * FROM CongTy INNER JOIN TaiKhoanCongTy 
+        ON CongTy.MaCongTy = TaiKhoanCongTy.MaCongTy
+        WHERE CongTy.MaCongTy = '$id';");
     if ($sql) {
         $data = array();
         while ($r = $sql->fetch_assoc()) {
