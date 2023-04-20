@@ -31,7 +31,7 @@ function show_data(data) {
     );
     let job = `
         <div class="col-sm-12 col-md-6 w-100 mb-3">
-            <div class="card hover-shadow" id="baidang${data[i]["id"]}">
+            <div class="card shadow" id="baidang${data[i]["id"]}">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-4">
@@ -43,17 +43,17 @@ function show_data(data) {
                             <h6 class="card-subtitle mb-2">${data[i]["TenCongTy"]}</h6>
                             <div class="col-lg-12 d-flex flex-row justify-content-between">
                                 <div>
-                                    ${formatter.format(data[i]["luong"])} VNĐ
+                                    <i class="bi bi-cash-stack"></i> ${formatter.format(data[i]["luong"])}
                                 </div>
                                 <div>
 
-                                    <span><i class="fa fa-buildings"></i> ${loaicongviec}</span>
+                                    <span><i class="bi bi-bag-check-fill"></i></i> ${loaicongviec}</span>
                                 </div>
                             </div>
 
                             <div class="col-lg-8">
 
-                                <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
+                                <span><i class="bi bi-geo-alt-fill"></i><span>
                                 <span class="card-text">Thành Phố ${data[i]["thanhpho"]}</span>
                                 
                             </div>
@@ -216,9 +216,9 @@ $(function () {
   get_job();
   get_detail_job(1);
 });
-const formatter = new Intl.NumberFormat("en-US", {
+const formatter = new Intl.NumberFormat("vi-VN", {
   style: "currency",
-  currency: "USD",
+  currency: "VND",
   maximumFractionDigits: 0,
 });
 
