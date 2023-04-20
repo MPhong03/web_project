@@ -1,125 +1,107 @@
 function get_job() {
-  $.post("../../../src/Controllers/C_getJob.php", {
-    type: 2,
-  }).done(function (data, status) {
-    data = JSON.parse(data);
-    console.log(data);
-    console.log(status);
-    if (status) {
-      show_data(data);
-    }
-  });
+    $.post("../../../src/Controllers/C_getJob.php", {
+        type: 2,
+    }).done(function(data, status) {
+        data = JSON.parse(data);
+        console.log(data);
+        console.log(status);
+        if (status) {
+            show_data(data);
+        }
+    });
 }
+
 function show_data(data) {
-  let showjob = $("#showJob");
-  showjob.html("");
-  for (let i = 0; i < data.length; i++) {
-    let loaicongviec = "Bán thời gian";
-    if (data[i]["loaicongviec"] == 1) {
-      loaicongviec = "Toàn thời gian";
-    }
-    let tagkinang = "";
-    let skills = data[i]["tagkinang"].split(",");
-    for (let j = 0; j < skills.length; j++) {
-      tagkinang += `<p class='card-text p-request'>${skills[j]}</p>\n`;
-    }
-    let expired;
-    expired = new Date(data[i]["thoihan"]);
-    const moment = new Date(Date.now());
-    const diffDays = Math.ceil(
-      Math.abs(expired - moment) / (1000 * 60 * 60 * 24)
-    );
-    let job = `
-          <div class="col-sm-12 col-mg-content-2-left-main">
-          <div class="card card-format-border-left" id="baidang${
-            data[i]["id"]
-          }">
-              <div class="card-body">
-                  <div class="row">
-                      <div class="col-sm-12 col-img-text">
-                          <div class="col-img">
-                              <span>
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 84 84">
-                                      <defs>
-                                          <pattern id="pattern${i}" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 229 220">
-                                              <image width="200" height="160" xlink:href="${
-                                                data[i]["linkava"]
-                                              }" />
-                                          </pattern>
-                                      </defs>
-                                      <rect id="" width="84" height="84" fill="url(#pattern${i})" />
-                                  </svg>
-                              </span>
-                          </div>
-                          <div class="col-text">
-                              <h5 class="card-title format-text-bold">${
-                                data[i]["tencongviec"]
-                              }</h5>
-                              <h6 class="card-subtitle mb-2">${
-                                data[i]["TenCongTy"]
-                              }</h6>
-                          </div>
-                      </div>
-                      <div class="col-sm-12">
-                          <div class="col-money">
-                              <span><i class="fa fa-eur" aria-hidden="true"></i></span>
-                              <p class="card-text p-money">${formatter.format(
-                                data[i]["luong"]
-                              )}/tháng</p>
-                          </div>
-                          <div class="col-time">
-                              <span><img class="img-time" src="../../../src/assets/Images/time.jpg" alt=""></span>
-                              <span class="card-text p-time">${loaicongviec}</span>
-                          </div>
-                      </div>
-                      <div class="col-sm-12">
-                          ${tagkinang}
-                      </div>
-                      <div class="col-sm-8 col-diadiem">
-                          <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
-                                  <span class="card-text p-diadiem">Thành Phố ${
-                                    data[i]["thanhpho"]
-                                  }</span>
-                      </div>
-                      <div class="col-sm-4">
-                          <p class="card-text p-timeleft">Còn ${diffDays} ngày</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+    let showjob = $("#showJob");
+    showjob.html("");
+    for (let i = 0; i < data.length; i++) {
+        let loaicongviec = "Bán thời gian";
+        if (data[i]["loaicongviec"] == 1) {
+            loaicongviec = "Toàn thời gian";
+        }
+        let tagkinang = "";
+        let skills = data[i]["tagkinang"].split(",");
+        for (let j = 0; j < skills.length; j++) {
+            tagkinang += `<p class='card-text p-request'>${skills[j]}</p>\n`;
+        }
+        let expired;
+        expired = new Date(data[i]["thoihan"]);
+        const moment = new Date(Date.now());
+        const diffDays = Math.ceil(
+            Math.abs(expired - moment) / (1000 * 60 * 60 * 24)
+        );
+        let job = `
+    <div class="col-sm-12 col-md-6 w-100 mb-3">
+    <div class="card shadow" id="baidang${data[i]["id"]}">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="card-img col-lg-3" src="${data[i]["linkava"]}" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <h5 class="card-title format-text-bold">${data[i]["tencongviec"]}</h5>
+                    <h6 class="card-subtitle mb-2">${data[i]["TenCongTy"]}</h6>
+                    <div class="col-lg-12 d-flex flex-row justify-content-between">
+                        <div>
+                            <i class="bi bi-cash-stack"></i> ${formatter.format(data[i]["luong"])}
+                        </div>
+                        <div>
+
+                            <span><i class="bi bi-bag-check-fill"></i></i> ${loaicongviec}</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+
+                        <span><i class="bi bi-geo-alt-fill"></i><span>
+                        <span class="card-text">Thành Phố ${data[i]["thanhpho"]}</span>
+                        
+                    </div>
+
+                    <div class="col-lg-12">
+                        ${tagkinang}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
       `;
-    showjob.append(job);
-  }
+        showjob.append(job);
+    }
 }
+
 function show_detail_data(data) {
-  let detailJob = $("#col-centent2-right-scroll");
-  let motacongviec = "<li>Không có mô tả</li>";
-  let quyenloi = "<li>Không có thông tin</li>";
-  let yeucaucongviec = "<li>Không yêu cầu</li>";
-  let yeucaubangcap = "Không có";
-  let thoihan = new Date(data[0]["thoihan"]);
-  thoihan = thoihan.toLocaleDateString();
-  if (data[0]["motacongviec"] != "") {
-    motacongviec = "";
-    let listmota = data[0]["motacongviec"].split("\n");
-    for (i of listmota) motacongviec += `<li>${i}</li>`;
-  }
-  if (data[0]["quyenloi"] != "") {
-    quyenloi = "";
-    let listquyenloi = data[0]["quyenloi"].split("\n");
-    for (i of listquyenloi) quyenloi += `<li>${i}</li>`;
-  }
-  if (data[0]["yeucaucongviec"] != "") {
-    yeucaucongviec = "";
-    let listyeucaucongviec = data[0]["yeucaucongviec"].split("\n");
-    for (i of listyeucaucongviec) yeucaucongviec += `<li>${i}</li>`;
-  }
-  if (data[0]["yeucaubangcap"] != "") {
-    yeucaubangcap = "";
-    yeucaubangcap = data[0]["yeucaubangcap"];
-  }
-  let show = `
+    let detailJob = $("#col-centent2-right-scroll");
+    let motacongviec = "<li>Không có mô tả</li>";
+    let quyenloi = "<li>Không có thông tin</li>";
+    let yeucaucongviec = "<li>Không yêu cầu</li>";
+    let yeucaubangcap = "Không có";
+    let thoihan = new Date(data[0]["thoihan"]);
+    thoihan = thoihan.toLocaleDateString();
+    if (data[0]["motacongviec"] != "") {
+        motacongviec = "";
+        let listmota = data[0]["motacongviec"].split("\n");
+        for (i of listmota) motacongviec += `<li>${i}</li>`;
+    }
+    if (data[0]["quyenloi"] != "") {
+        quyenloi = "";
+        let listquyenloi = data[0]["quyenloi"].split("\n");
+        for (i of listquyenloi) quyenloi += `<li>${i}</li>`;
+    }
+    if (data[0]["yeucaucongviec"] != "") {
+        yeucaucongviec = "";
+        let listyeucaucongviec = data[0]["yeucaucongviec"].split("\n");
+        for (i of listyeucaucongviec) yeucaucongviec += `<li>${i}</li>`;
+    }
+    if (data[0]["yeucaubangcap"] != "") {
+        yeucaubangcap = "";
+        yeucaubangcap = data[0]["yeucaubangcap"];
+    }
+    let show = `
       <div class="row">
       <div class="col-sm-12 col-content2-right-above">
           <div class="card-mota">
@@ -215,69 +197,72 @@ function show_detail_data(data) {
       </div>
   </div>
       `;
-  detailJob.html(show);
+    detailJob.html(show);
 }
+
 function get_detail_job(id) {
-  $.post("../../../src/Controllers/C_getJob.php", {
-    type: 1,
-    idbaidang: id,
-  }).done(function (data, status) {
-    data = JSON.parse(data);
-    console.log(data);
-    console.log(status);
-    if (status) {
-      show_detail_data(data);
-    }
-  });
+    $.post("../../../src/Controllers/C_getJob.php", {
+        type: 1,
+        idbaidang: id,
+    }).done(function(data, status) {
+        data = JSON.parse(data);
+        console.log(data);
+        console.log(status);
+        if (status) {
+            show_detail_data(data);
+        }
+    });
 }
-$(function () {
-  get_job();
+$(function() {
+    get_job();
 
-  get_detail_job(1);
+    get_detail_job(1);
 });
+
 function get_job_with_urlID(id) {
-  $.post("../../../src/Controllers/C_getJob.php", {
-    type: 3,
-    idcongty: id,
-  }).done(function (data, status) {
-    data = JSON.parse(data);
-    console.log(data);
-    console.log(status);
-    if (status) {
-      show_data(data);
-    }
-  });
+    $.post("../../../src/Controllers/C_getJob.php", {
+        type: 3,
+        idcongty: id,
+    }).done(function(data, status) {
+        data = JSON.parse(data);
+        console.log(data);
+        console.log(status);
+        if (status) {
+            show_data(data);
+        }
+    });
 }
 
-const formatter = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  maximumFractionDigits: 0,
+const formatter = new Intl.NumberFormat("vi-VN", {
+    style: "currency",
+    currency: "VND",
+    maximumFractionDigits: 0,
 });
 
 // Sự kiện thay đổi các chi tiết công việc khi ấn vào
-$(document).on("click", ".card-body", function (e) {
-  let id = $(this).parent().attr("id");
-  id = id.split("baidang")[1];
-  get_detail_job(parseInt(id));
-  $(".card-body").each(function (a, b) {
-    $(b).attr("style", "box-shadow: none;");
-  });
-  $(this).attr("style", "box-shadow: 0 0 5px black;");
+$(document).on("click", ".card-body", function(e) {
+    let id = $(this).parent().attr("id");
+    id = id.split("baidang")[1];
+    get_detail_job(parseInt(id));
+    $(".card-body").each(function(a, b) {
+        $(b).attr("style", "box-shadow: none;");
+    });
+    $(this).attr("style", "box-shadow: 0 0 5px black;");
 });
 
 function vieclam() {
-$("#gioithieu").attr("style", "display: none;");
-$("#phucloi").attr("style", "display: none;");
-  let change = $("#content-2").children().first();
-  change.attr("style", "display: block;");
+    $("#gioithieu").attr("style", "display: none;");
+    $("#phucloi").attr("style", "display: none;");
+    let change = $("#content-2").children().first();
+    change.attr("style", "display: block;");
 }
+
 function gioithieu(data) {
-  let [ten, mota, website, linhvuc, diachi,sdt,email] = data.split("<br>");
-  let change = $("#content-2").children().first();
-  change.attr("style", "display: none;");
-  $("#phucloi").attr("style", "display: none;");
-  let res = `
+    let [ten, mota, website, linhvuc, diachi, sdt, email] = data.split("<br>");
+    let change = $("#content-2").children().first();
+    change.attr("style", "display: none;");
+    $("#phucloi").attr("style", "display: none;");
+    let res = `
     <div id="gioithieu" class="container-fluid container-content-2">
         <ul class="list-group list-group-flush">
             <h3 class="mt-3">Tên Công Ty</h3>
@@ -300,19 +285,20 @@ function gioithieu(data) {
         </ul>
     </div>
     `;
-  $("#toggle").html(res);
+    $("#toggle").html(res);
 }
+
 function phucloi(data) {
-  console.log(data);
-  let change = $("#content-2").children().first();
-  $("#gioithieu").attr("style", "display: none;");
-  change.attr("style", "display: none;");
-  data = data.split("\n");
-  let li = "";
-  data.forEach(function (a, b) {
-    li += `<li class="list-group-item">${a}</li>`;
-  });
-  let res = `
+    console.log(data);
+    let change = $("#content-2").children().first();
+    $("#gioithieu").attr("style", "display: none;");
+    change.attr("style", "display: none;");
+    data = data.split("\n");
+    let li = "";
+    data.forEach(function(a, b) {
+        li += `<li class="list-group-item">${a}</li>`;
+    });
+    let res = `
     <div id="gioithieu" class="container container-content-2">
         <ul class="list-group list-group-flush">
             <h3 class="mt-3">Phúc lợi</h3>
@@ -320,5 +306,5 @@ function phucloi(data) {
         </ul>
     </div>
     `;
-  $("#toggle").html(res);
+    $("#toggle").html(res);
 }

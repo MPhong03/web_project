@@ -1,29 +1,30 @@
 function get_user() {
-  $.post("../../../src/Controllers/C_InfoUser.php", {
-    type: 2,
-  }).done(function (data, status) {
-    data = JSON.parse(data);
-    console.log(data);
-    console.log(status);
-    if (status) {
-      show_data(data);
-    }
-  });
+    $.post("../../../src/Controllers/C_InfoUser.php", {
+        type: 2,
+    }).done(function(data, status) {
+        data = JSON.parse(data);
+        console.log(data);
+        console.log(status);
+        if (status) {
+            show_data(data);
+        }
+    });
 }
+
 function show_data(data) {
-  let showUser = $("#showUser");
-  showUser.html("");
-  for (let i = 0; i < data.length; i++) {
-    let loaicongviec = "Bán thời gian";
-    if (data[i]["loaicongviec"] == 1) {
-      loaicongviec = "Toàn thời gian";
-    }
-    let tagkinang = "";
-    let skills = data[i]["tagkinang"].split(",");
-    for (let j = 0; j < skills.length; j++) {
-      tagkinang += `<p class='card-text p-request'>${skills[j]}</p>\n`;
-    }
-    let job = `
+    let showUser = $("#showUser");
+    showUser.html("");
+    for (let i = 0; i < data.length; i++) {
+        let loaicongviec = "Bán thời gian";
+        if (data[i]["loaicongviec"] == 1) {
+            loaicongviec = "Toàn thời gian";
+        }
+        let tagkinang = "";
+        let skills = data[i]["tagkinang"].split(",");
+        for (let j = 0; j < skills.length; j++) {
+            tagkinang += `<p class='card-text p-request'>${skills[j]}</p>\n`;
+        }
+        let job = `
     <div class="col-sm-12 col-md-6 w-100 mb-3">
       <div class="card shadow" id="user${data[i]["id"]}">
           <div class="card-body">
@@ -60,13 +61,14 @@ function show_data(data) {
       </div>
   </div>
       `;
-    showUser.append(job);
-  }
+        showUser.append(job);
+    }
 }
+
 function show_detail_data(data) {
-  let ele = $("#content");
-  ele.html("");
-  let res = `
+    let ele = $("#content");
+    ele.html("");
+    let res = `
   <div class="row">
 	  <div class="col-lg-12 p-0">
 		  <div class="card shadow" style="border-radius: .5rem;">
@@ -141,38 +143,39 @@ function show_detail_data(data) {
   </div>
 </div>
     `;
-  ele.html(res);
+    ele.html(res);
 }
+
 function get_detail_user(id) {
-  $.post("../../../src/Controllers/C_InfoUser.php", {
-    type: 3,
-    iduser: id,
-  }).done(function (data, status) {
-    data = JSON.parse(data);
-    console.log(data);
-    console.log(status);
-    if (status) {
-      show_detail_data(data);
-    }
-  });
+    $.post("../../../src/Controllers/C_InfoUser.php", {
+        type: 3,
+        iduser: id,
+    }).done(function(data, status) {
+        data = JSON.parse(data);
+        console.log(data);
+        console.log(status);
+        if (status) {
+            show_detail_data(data);
+        }
+    });
 }
-$(function () {
-  get_user();
-  get_detail_user(1);
+$(function() {
+    get_user();
+    get_detail_user(1);
 });
 const formatter = new Intl.NumberFormat("vi-VN", {
-  style: "currency",
-  currency: "VND",
-  maximumFractionDigits: 0,
+    style: "currency",
+    currency: "VND",
+    maximumFractionDigits: 0,
 });
 
 // Sự kiện thay đổi các chi tiết công việc khi ấn vào
-$(document).on("click", ".card-body", function (e) {
-  let id = $(this).parent().attr("id");
-  id = id.split("user")[1];
-  get_detail_user(parseInt(id));
-  $(".card-body").each(function (a, b) {
-    $(b).attr("style", "box-shadow: none;");
-  });
-  $(this).attr("style", "box-shadow: 0 0 5px black;");
+$(document).on("click", ".card-body", function(e) {
+    let id = $(this).parent().attr("id");
+    id = id.split("user")[1];
+    get_detail_user(parseInt(id));
+    $(".card-body").each(function(a, b) {
+        $(b).attr("style", "box-shadow: none;");
+    });
+    $(this).attr("style", "box-shadow: 0 0 5px black;");
 });
