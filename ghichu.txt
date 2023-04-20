@@ -1,8 +1,0 @@
-them table congty:
-    phuc loi
-them table dangviec:
-    thoihan
-    yeucaucongviec
-    yeucaubangcap
-    quyenloi
-    soluongtuyendung
