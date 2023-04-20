@@ -28,7 +28,6 @@ $(function () {
         <div onclick="gotoHomepageAdmin(${data[i]["id"]},${data[i]["idcongty"]})" class="offset-sm-auto mx-auto mb-3 col-12 col-sm-10 col-md-5 cards">
           <div class="card card-format-border-left">
               <div class="card-body">
-
                 <div class="row">
                   <div class="col-lg-4">
                       <img class="card-img col-lg-3" src="${data[i]["linkava"]}" alt="">
@@ -43,6 +42,7 @@ $(function () {
                   </div>
 
                 </div>
+          </div>
           </div>
         </div>
         `;

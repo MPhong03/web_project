@@ -35,16 +35,15 @@ function Data_DuyetCongViec(data){
             </td>
             <td class="format-td">
                 <div class="format-td-hoso">
-                    <a class="format-hoso" role="button" href="../../../src/Views/admin/pageinfoadmin.php?idbaidang=${data[i]["MaDangTin"]}" class="btn btn-link  btn-rounded">
+                    <a class="format-hoso" role="button" href="../../../src/Views/user/pageinfouser.php?id=${data[i]["MaNguoiTimViec"]}" class="btn btn-link  btn-rounded">
+                        Xem hồ sơ
+                    </a>
+                </div>
+                <div class="format-td-hoso">
+                    <a class="format-hoso" role="button" href="../admin/pageinfoAdmin.php?idbaidang=${data[i]["MaDangTin"]}&idcongty=${data[i]["MaCongTy"]}" class="btn btn-link  btn-rounded">
                         Xem bài đăng
                     </a>
                 </div>
-                <div class="format-td-baidang">
-                    <a class="format-baidang" class="aa" role="button" href="../admin/pageinfoAdmin.php?idcongty=${data[i]["MaCongTy"]}" class="btn btn-link btn-rounded">
-                        Xem công ty
-                    </a>
-                </div>
-
             </td>
             <td>
                 <div class="format-btn-dongy">
@@ -63,9 +62,8 @@ function Data_DuyetCongViec(data){
                 </div>
 
             </td>
-        </tr>
-            `;
-        }else if (data[i]["daduyet"]==1){
+        </tr> `;
+        } else if (data[i]["daduyet"]==1){
             resTable2+=`
             <tr class="format-text">
             <td>
@@ -77,17 +75,18 @@ function Data_DuyetCongViec(data){
                 <p class="fw-normal mb-1">${data[i]["TenCongTy"]}</p>
             </td>
             <td class="format-td">
-                <div class="format-td-baidang">	
-                    <a class="format-baidang" role="button" href="../../../src/Views/admin/pageinfoadmin.php?idbaidang=${data[i]["MaDangTin"]}" class="btn btn-link  btn-rounded">	
-                        Xem bài đăng
                 <div class="format-td-hoso">
-                    <a class="format-hoso" role="button" href="../admin/pageinfoAdmin.php?idcongty=${data[i]["MaCongTy"]}" class="btn btn-link  btn-rounded">
+                    <a class="format-hoso" class="aa" role="button" href="../admin/pageinfoAdmin.php?idcongty=${data[i]["MaCongTy"]}" class="btn btn-link btn-rounded">
                         Xem công ty
                     </a>
                 </div>
-            </td>
-        </tr>
-            `;
+                <div class="format-td-hoso">
+                    <a class="format-hoso" role="button" href="../admin/pageinfoAdmin.php?idbaidang=${data[i]["MaDangTin"]}&idcongty=${data[i]["MaCongTy"]}" class="btn btn-link  btn-rounded">
+                        Xem bài đăng
+                    </a>
+                </div>
+            </td> 
+            </tr>`;
         }
     }
     table1.html(resTable1);
