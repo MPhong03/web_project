@@ -4,7 +4,7 @@
 		<div class="container-fluid">
 			<!-- <a class="navbar-brand" href="../../../index.php">FINDWORK</a> -->
 			<a class="navbar-brand" href="index.php">
-				<img src="src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
+				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
 			</a>
 
 			<button class="navbar-toggler border-0" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
 						<!-- Đang chỉnh -->
 						<!-- <input name="login" type="submit" class="form-control-plaintext nav-link border-0 text-start"
                             data-bs-toggle="modal" data-bs-target="#form-login" value="Đăng nhập"> -->
-						<a class="nav-link active" href="./src/Controllers/C_SignIn.php" data-bs-toggle="modal" data-bs-target="#form-login">Đăng nhập</a>
+						<a class="nav-link" href="./src/Controllers/C_SignIn.php">Đăng nhập</a>
 					</li>
 					<li class="nav-item item-dangky">
 						<a class="nav-link" href="./src/Controllers/C_Register.php">Đăng ký</a>
