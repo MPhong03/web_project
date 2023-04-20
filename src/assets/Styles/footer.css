@@ -1,13 +1,15 @@
 	/* css footer */
 	#footer{
 		margin-top: 80px;
-		height: 110px;
-		background-color: #000;
+		height: 120px;
+		background-color: #b0d4b8;
 	}
+	
 	.container-footer{
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		text-align: center;
 	}
+
 	.h5-footer{
 		font-weight: bold;
 		color: #fff;
