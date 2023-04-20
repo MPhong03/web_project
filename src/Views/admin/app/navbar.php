@@ -1,19 +1,19 @@
 <div class="navbar-content fixed-top" id="navbar-content" data-scrollto-offset="0">
-	<nav class="navbar navbar-expand-lg navbar-light px-4">
-		<div class="container-fluid">
-			<!-- <a class="navbar-brand" href="../../../index.php">FINDWORK</a> -->
-			<a class="navbar-brand" href="index.php">
+    <nav class="navbar navbar-expand-lg navbar-light px-4">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="../../../../index.php">FINDWORK</a> -->
+            <a class="navbar-brand" href="index.php">
 				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
 			</a>
 
-			<button class="navbar-toggler border-0" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-            
+            <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../../../routes.php?dangviec">Đăng việc</a>
+                        <a class="nav-link" aria-current="page" href="../../../../routes.php?dangviec">Đăng việc</a>
                         
                     </li>
                 </ul>
@@ -26,6 +26,7 @@
                         </button>
                         <ul class="filter-dropdownlist-user" id="filter-btn-user">
                             <li class="filter-dropdownlistItem">
+                                <i class="bi bi-person"></i>
                                 <a href="./capnhatdoanhnghiep.php" class="filter-dropdownlistitemLink">Chỉnh sửa thông tin</a>
                             </li>
                             <li class="filter-dropdownlistItem ormat-border-top">
