@@ -20,19 +20,15 @@
       <h5 class="text-center text-white me-3 d-lg-block d-none">KẾT NỐI VỚI SEEKER</h5>
       <div class="d-flex justify-content-center align-items-center d-lg-block d-none">
         <a style="text-decoration:none;" href="" class="me-4 text-reset">
-          <!-- <i class="ti-facebook">PHẠM DUY KHOA</i> -->
           <i class="text-white fa fa-brands fa-facebook"></i>
         </a>
         <a style="text-decoration:none;" href="" class="me-4 text-reset">
-          <!-- <i class="">DƯƠNG HẢI ĐĂNG</i> -->
           <i class="text-white fa fa-brands fa-instagram"></i>
         </a>
         <a style="text-decoration:none;" href="" class="me-4 text-reset">
-          <!-- <i class="">NGUYỄN NGỌC ÁI ĐAN</i> -->
           <i class="text-white fa fa-brands fa-twitter"></i>
         </a>
         <a style="text-decoration:none;" href="" class="me-4 text-reset">
-          <!-- <i class="">TRẦN GIA BẢO</i> -->
           <i class="text-white fa fa-brands fa-linkedin"></i>
         </a>
       </div>
