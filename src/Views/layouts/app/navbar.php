@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light px-4">
 		<div class="container-fluid">
 			<!-- <a class="navbar-brand" href="../../../index.php">FINDWORK</a> -->
-			<a class="navbar-brand" href="index.php">
+			<a class="navbar-brand" href="../../../../index.php">
 				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
 			</a>
 
