@@ -48,7 +48,7 @@
           <div class="col-sm-12 seach-box">
             <div class="input-group form-container mb-3">
               <span class="input-group-text text-diadiem" id="inputGroup-sizing-default">
-                <i class="bi bi-pin-map-fill"></i>
+                <i class="bi bi-map"></i>
               </span>
               <input id="myInput1" type="text" name="search-location" class="form-control search-input"
                 placeholder="Địa điểm" autocomplete="off">
