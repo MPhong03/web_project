@@ -2,10 +2,6 @@
     padding-top: 60px;
 }
 
-.img-fluid {
-    width: 150px;
-}
-
 .gradient-custom {
     background: -webkit-linear-gradient(to right bottom, #44A682, rgb(90, 226, 158));
     background: linear-gradient(to right bottom, #2f8a69, rgb(68, 254, 152))
