@@ -1,8 +1,8 @@
 <?php 
 // header("Content-type: text/html; charset=utf-8");
     $host = 'localhost'; // tên mysql server
-    $user = 'root';
-    $pass = 'root';
+    $user = '';
+    $pass = '';
     $db = 'webtimviec'; // tên databse
 	
     $conn = new mysqli($host, $user, $pass, $db);
