@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    bottom: 0px;
+}
+
+.img-center {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.format-nameComapy {
+    position: absolute;
+    top: 70%;
+}
+
+.gioithieucongty {
+    position: absolute;
+    bottom: 25px;
+}
+
+li {
+    list-style: none;
+}
