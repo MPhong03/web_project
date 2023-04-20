@@ -10,7 +10,17 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
+CREATE DATABASE IF NOT EXISTS `WebTimViec` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `WebTimViec`;
+drop table if exists CongViecDuocMoi;
+drop table if exists LuuCT;
+drop table if exists LuuNTV;
+drop table if exists UngTuyen;
+drop table if exists DangViec;
+drop table if exists Client;
+drop table if exists Admin;
+drop table if exists NguoiTimViec;
+drop table if exists CongTy;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
