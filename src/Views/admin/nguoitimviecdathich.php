@@ -28,7 +28,7 @@ require("check.php");
     <link rel="stylesheet" href="../../../src/assets/Styles/footer.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Người tìm việc đã thích</title>
+    <title>Ứng viên yêu thích</title>
 </head>
 
 <body>
@@ -50,17 +50,20 @@ require("check.php");
             right:0;
             left:0;
         }
+        h4{
+            color:#44A682;
+        }
     </style> 
-    <div id="main" style="min-height:100vh;position:relative">
+    <div id="main">
         <?php
             require_once("./app/navbar.php");
         ?>
         <div id="content">
-            <div class="container container-content" style="min-height:70vh;">
+            <div class="container container-content" style="min-height:100vh;">
                 <div class="row">
                     <div class="col-sm-12 col-nguoitimviecdathich">
                         <div class="col-sm-12 format-text-heading">
-                            <h4>Người tìm việc đã thích</h4>
+                            <h4>ỨNG VIÊN YÊU THÍCH</h4>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap" id="wrapSaveNTV">

@@ -51,14 +51,14 @@ function Data_DuyetUngVien(data){
                 <div class="format-btn-dongy">
                     <button onclick="dongyduyet(${data[i]["MaNguoiTimViec"]})" class="btn-dongy" aria-haspopup="true" aria-expanded="false">
                         <span>
-                            <img class="format-img-done" src="../../../src/assets/Images/ic_done_24px.png" alt="">
+                            Duyệt đơn
                         </span>
                     </button>
                 </div>
                 <div class="format-btn-tuchoi" id="format-btn-tuchoi-id">
                     <button onclick="tuchoiduyet(${data[i]["MaNguoiTimViec"]})" class="btn-tuchoi" id="btn-tuchoi-id" aria-haspopup="true" aria-expanded="false">
                         <span>
-                            <img class="format-img-clear" src="../../../src/assets/Images/ic_clear_24px.png" alt="">
+                            Loại đơn
                         </span>
                     </button>
                 </div>
@@ -138,13 +138,11 @@ function Data_yeucautuyendung(data){
                     Xem hồ sơ
                 </a>
             </div>
-
         </td>
         <td>
             ${trangthai}
         </td>
-    </tr>
-        `;
+    </tr>`;
     }
     table.html(resTable);
 }

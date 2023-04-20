@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="${data.type == "Client"? "../../../../src/Views/user/congviecduocmoi.php":"../../../../src/Views/admin/duyetungvien.php"}" class="filter-dropdownlistitemLink">${data.type == "Client"? "Duyệt công việc":"Duyệt ứng viên"}</a>
                 </li>
                 <li class="filter-dropdownlistItem format-border-top">
-                    <a href="${data.type == "Client"? "../../../../src/Views/user/congviecdathich.php":"../../../../src/Views/admin/nguoitimviecdathich.php"}" class="filter-dropdownlistitemLink">${data.type == "Client"? "Công việc đã thích":"Người tìm việc đã thích"}</a>
+                    <a href="${data.type == "Client"? "../../../../src/Views/user/congviecdathich.php":"../../../../src/Views/admin/nguoitimviecdathich.php"}" class="filter-dropdownlistitemLink">${data.type == "Client"? "Công việc đã thích":"Ứng viên yêu thích"}</a>
                 </li>
                 <li class="filter-dropdownlistItem format-border-top">
                     <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>

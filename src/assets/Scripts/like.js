@@ -99,31 +99,26 @@ function getDataNTV(data) {
       tagkinang += `<p class='card-text p-request'>${skills[j]}</p>\n`;
     }
     let job = `
-    <div onclick="gotoHomepageClient(${data[i]["MaNguoiTimViec"]})" class="offset-sm-auto mx-auto mb-3 col-12 col-sm-10 col-md-5 cards">
+    <div onclick="gotoHomepageClient(${data[i]["MaNguoiTimViec"]})" class="offset-sm-auto mx-auto mb-3 col-12 col-sm-10 col-md-7 cards">
       <div class="card card-format-border-left">
-          <div class="card-body">
+          <div class="card-body" style="color:#44A682">
                   <div class="row">
                     <div class="col-lg-4">
                         <img class="card-img col-lg-3" src="${data[i]["linkava"]}" alt="">
                     </div>
 
                     <div class="col-lg-8">
-                        <h5 class="card-title format-text-bold">${data[i]["hoten"]}</h5>
-                        <h6 class="card-subtitle mb-2">${data[i]["congviec"]}</h6>
+                        <h2 class="card-title format-text-bold">${data[i]["hoten"]}</h2>
+                        <h5 class="card-subtitle mb-2">${data[i]["congviec"]}</h5>
                         <div class="col-lg-12 d-flex flex-row justify-content-between">
                             <div>
-        
                                 <span><i class="fa fa-buildings"></i>${loaicongviec}</span>
                             </div>
                         </div>
-        
                         <div class="col-lg-8">
-        
                             <span><i class="fa fa-map-marker" aria-hidden="true"></i><span>
-                            <span class="card-text">Thành Phố ${data[i]["thanhpho"]}</span>
-                            
+                            <span class="card-text">${data[i]["thanhpho"]}</span>
                         </div>
-        
                         <div class="col-lg-12">
                             ${tagkinang}
                         </div>
@@ -132,8 +127,7 @@ function getDataNTV(data) {
                   </div>
               </div>
           </div>
-      </div>
-      `;
+      </div>`;
       ele.append(job);
   }
 }
