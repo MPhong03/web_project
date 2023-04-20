@@ -74,7 +74,7 @@
                             <!-- chuyennganh -->
                             <h5 id="chuyennganhCV">Software Developer</h5>
                             <!-- gioithieubanthan -->
-                            <p id="gioithieu" class="border-top pt-3">Quỳnh vừa xinh đẹp còn đáng yêu. Nhận w đi!!</p>
+                            <!--<p id="gioithieu" class="border-top pt-3">Quỳnh vừa xinh đẹp còn đáng yêu. Nhận w đi!!</p> -->
                         </div>
                     </div>
                 </div>
