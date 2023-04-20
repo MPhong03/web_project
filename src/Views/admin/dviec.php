@@ -1,171 +1,133 @@
-<style>
-    label{
-        color:black;
-    }
-</style>
-<h1 class="text-center" style="color:#44A682">ĐĂNG TIN TUYỂN DỤNG</h1>
-<div id="content" class="container-fluid bg">
-    <div class="row justify-content-center">
-      <div class="col-xs-12 col-sm-10 row-container my-5">
-        <form  id="form" method="post" action="../../../src/Controllers/C_updateUser.php" class="needs-validation my-4" novalidate enctype="multipart/form-data">
-            <input name="dviec" type="hidden">
-            
-            <div class="form-group col-sm-4 col-lg-12 col-md-12">
-                <label for="namework">Tên Công Việc</label>
-                <input name="tencongviec" type="text" class="form-control py-3" id="namework" placeholder="Nhập tên công việc..." required>
-            </div>
-            <div class="form-group col-sm-4 col-lg-12 col-md-12">
-                  <label for="diachi">Địa Chỉ</label>
-                  <input name="diachi" type="text" class="form-control py-3" id="diachi" placeholder="Nhập địa chỉ..." required>
-              </div>
-            <div class="d-sm-flex  flex-sm-row mt-4">
-                <div class="form-group col-sm-4">
-                    <label for="linhvuc">Lĩnh Vực</label>
-                    <select name="linhvuc" class="form-control" id="linhvuc">
-                        <option>An toàn lao động</option>
-                        <option>Bán hàng kỹ thuật</option>
-                        <option>Bán lẻ / bán sỉ</option>
-                        <option>Báo chí / Truyền hình</option>
-                        <option>Bảo hiểm</option>
-                        <option>Bảo trì / Sửa chữa</option>
-                        <option>Bất động sản</option>
-                        <option>Biên / Phiên dịch</option>
-                        <option>Bưu chính - Viễn thông</option>
-                        <option>Chứng khoán / Vàng / Ngoại tệ</option>
-                        <option>Cơ khí / Chế tạo / Tự động hóa</option>
-                        <option>Công nghệ cao</option>
-                        <option>Công nghệ Ô tô</option>
-                        <option>Công nghệ thông tin</option>
-                        <option>Dầu khí/Hóa chất</option>
-                        <option>Dệt may / Da giày</option>
-                        <option>Địa chất / Khoáng sản</option>
-                        <option>Dịch vụ khách hàng</option>
-                        <option>Điện / Điện tử / Điện lạnh</option>
-                        <option>Điện tử viễn thông</option>
-                        <option>Du lịch</option>
-                        <option>Dược phẩm / Công nghệ sinh học</option>
-                        <option>Giáo dục / Đào tạo</option>
-                        <option>Hàng cao cấp</option>
-                        <option>Hàng gia dụng</option>
-                        <option>Hàng hải</option>
-                        <option>Hàng không</option>
-                        <option>Hàng tiêu dùng</option>
-                        <option>Hành chính / Văn phòng</option>
-                        <option>Hoá học / Sinh học</option>
-                        <option>Hoạch định/Dự án</option>
-                        <option>In ấn / Xuất bản</option>
-                        <option>IT Phần cứng / Mạng</option>
-                        <option>IT phần mềm</option>
-                        <option>Kế toán / Kiểm toán</option>
-                        <option>Khách sạn / Nhà hàng</option>
-                        <option>Kiến trúc</option>
-                        <option>Kinh doanh / Bán hàng</option>
-                        <option>Logistics</option>
-                        <option>Luật/Pháp lý</option>
-                        <option>Marketing / Truyền thông / Quảng cáo</option>
-                        <option>Môi trường / Xử lý chất thải</option>
-                        <option>Mỹ phẩm / Trang sức</option>
-                        <option>Mỹ thuật / Nghệ thuật / Điện ảnh</option>
-                        <option>Ngân hàng / Tài chính</option>
-                        <option>Ngành nghề khác</option>
-                        <option>NGO / Phi chính phủ / Phi lợi nhuận</option>
-                        <option>Nhân sự</option>
-                        <option>Nông / Lâm / Ngư nghiệp</option>
-                        <option>Phi chính phủ / Phi lợi nhuận</option>
-                        <option>Quản lý chất lượng (QA/QC)</option>
-                        <option>Quản lý điều hành</option>
-                        <option>Sản phẩm công nghiệp</option>
-                        <option>Sản xuất</option>
-                        <option>Spa / Làm đẹp</option>
-                        <option>Tài chính / Đầu tư</option>
-                        <option>Thiết kế đồ họa</option>
-                        <option>Thiết kế nội thất</option>
-                        <option>Thời trang</option>
-                        <option>Thư ký / Trợ lý</option>
-                        <option>Thực phẩm / Đồ uống</option>
-                        <option>Tổ chức sự kiện / Quà tặng</option>
-                        <option>Tư vấn</option>
-                        <option>Vận tải / Kho vận</option>
-                        <option>Xây dựng</option>
-                        <option>Xuất nhập khẩu</option>
-                        <option>Y tế / Dược</option>
-                    </select>
-                </div>
-                <div class="form-group col-sm-4">
-                    <label for="chucvu">Chức Vụ</label>
-                    <input name="chucvu" type="text" class="form-control py-3" id="chucvu" placeholder="Nhập chức vụ..." required>
-                </div>
-                <div class="form-group col-sm-4">
-                    <label for="loaicv">Loại Công Việc</label>
-                    <select name="loaicongviec" class="form-control" id="loaicv" required>
-                        <option value="1">Toàn thời gian</option>
-                        <option value="0">Bán thời gian</option>
-                    </select>                    
-                </div>
-            </div>
-            <div class="form-group col-sm-4 col-lg-12 col-md-12">
-                <label for="bangcap">Yêu Cầu Bằng Cấp</label>
-                <input name="yeucaubangcap" type="text" class="form-control py-3" id="bangcap" placeholder="Bằng đại học, bằng cấp 3, không cần bằng..." required>
-            </div>
-            
-            <div class="d-sm-flex flex-sm-row">
-                <div class="form-group col-sm-4">
-                    <label for="luong">Lương</label>
-                    <input min="1" max="9999999999" name="luong" type="number" class="form-control py-3" id="luong" placeholder="Nhập lương..." required>
-                </div>
-                <div class="form-group col-sm-4">
-                  <label for="soluongtuyen">Số Lượng Tuyển</label>
-                  <input name="soluongtuyendung" type="number" class="form-control py-3" id="soluongtuyen" placeholder="1" required>
-                </div>
-                <div class="form-group col-sm-4">
-                    <label for="duration">Thời Hạn Tuyển</label>
-                    <input name="thoihan" type="date" class="form-control py-3" id="duration" required>
-                </div>
-            </div>
-            <div class="d-sm-flex flex-sm-row">
-                <div class="form-group col-sm-6">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control py-3" id="email" placeholder="Nhập email..." required>
-                </div>
-                <div class="form-group col-sm-6">
-                    <label for="number">Số Điện Thoại</label>
-                    <input name="sdt" type="number" class="form-control py-3" id="number" placeholder="Nhập số điện thoại..." required>
-                </div>
-            </div>
-            <div class="form-group col-12">
-                <label for="comment">Mô Tả Công Việc</label>
-                <textarea name="motacongviec" class="form-control" rows="3" id="comment" placeholder="Nhập mô tả công việc..." required></textarea>
-            </div>
-            <div class="col-12">
-                <label for="yeucau">Yêu Cầu Công Việc</label>
-                <textarea name="yeucaucongviec" class="form-control" rows="3" id="yeucau" placeholder="Nhập yêu cầu công việc..." required></textarea>
-            </div><br>
-            <div class="form-group col-12">
-                  <label for="quyenloi">Quyền Lợi</label>
-                  <textarea name="quyenloi" class="form-control" rows="3" id="quyenloi" placeholder="Nhập quyền lợi công việc..." required></textarea>
-            </div>
-            <div class="tag-input form-group col-12">
-                    <div class="input">
-                        <label for="tag-ip">Kỹ Năng</label>
-                        <div class="d-flex flex-row">
-                            <input class="form-control mt-2" type="text" id="tag-ip" placeholder="Yêu cầu kỹ năng cần thiết...">
-                            <span class="material-icons btn" value="" style="color:black; font-size: 36px">add</span>
-                        </div>
-                    </div>
-                    <div class="tag-list"></div>
-                </div>
-                <input id="tagkinang" type="hidden" name="tagkinang" value ="">
-                <div class="offset-sm-4">
-                    <button style='background-color:#44A682' onMouseOver="this.style.background='#b0d4b8'" onMouseOut="this.style.background='#44A682'" type="submit" class="mx-auto"><strong>ĐĂNG TIN</strong></button>
-                </div>
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
+<?php
+    require("check.php");
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Đăng việc</title>
+        <!-- Boostrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <!-- Boostrap separate -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!-- Bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <!-- Custom.css -->
+        <link rel="stylesheet" href="../../../src/assets/Styles/custom.css">
+        <!-- navbar.css -->
+        <link rel="stylesheet" href="../../../src/assets/Styles/navbar.css">
+        <!-- content2.css -->
+        <link rel="stylesheet" href="../../../src/assets/Styles/content2.css">
+        <!-- footer.css -->
+        <link rel="stylesheet" href="../../../src/assets/Styles/footer.css">
+        <!-- style2.css -->
+        <link href="../../../src/assets/Styles/style2.css" rel="stylesheet">
+        <!-- reponsive.css -->
+        <link rel="stylesheet" href="../../../src/assets/Styles/reponsive.css">
 
-<!-- <form method="post" action="../../../src/Controllers/test.php" enctype="multipart/form-data">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<input type="file" name="avatar">
-  <button type="submit" name="btn">submit</button>
-</form> -->
+        <style>
+            html, body {
+                background-color: #FAF9F8;
+            }
+
+            .format-nav {
+                background-color: black !important;
+            }
+
+            #navbar-content {
+                position: sticky;
+            }
+
+            .delete-btn:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+    <?php
+        require_once("./app/navbar.php");
+        require_once("./app/dviecForm.php");
+        require_once("../../../src/Views/layouts/app/footer.php");
+    ?>
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+            })();
+        </script>
+        <script>
+
+            let tags = [];
+            function addTag(e) {
+            console.log(e);
+
+            let tag = document.getElementById('tag-ip').value.trim()
+            if (tag.length < 1 || tags.includes(tag)) {
+                e.target.value = "";
+                return;
+            }
+            let index = tags.push(tag);
+            let tagItem = document.createElement("div");
+            tagItem.classList.add("item");
+            tagItem.innerHTML = `
+                    <span class="delete-btn" onclick ="deleteTag(this,'${tag}')"><i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                    <span class="contentTag">${tag}</span>
+                `;
+            document.querySelector(".tag-list").appendChild(tagItem);
+            e.target.value = "";
+            let ele = $(".tag-list").children()
+            let res=[];
+            ele.each(function(a,b){
+                console.log($(b).find(".contentTag"))
+                res.push($(b).find(".contentTag").html())
+            })
+            res = res.join(",")
+            $("#tagkinang").val(res);
+            console.log($("#tagkinang").val())
+            }
+
+            function deleteTag(ref, tag) {
+            let parent = ref.parentNode.parentNode;
+            parent.removeChild(ref.parentNode);
+            let index = tags.indexOf(tag);
+            tags.splice(index);
+            let ele = $(".tag-list").children()
+            let res=[];
+            ele.each(function(a,b){
+                console.log($(b).find(".contentTag"))
+                res.push($(b).find(".contentTag").html())
+            })
+            res = res.join(",")
+            $("#tagkinang").val(res);
+            console.log($("#tagkinang").val())
+            }
+            document.querySelector(".material-icons").addEventListener("click", addTag);
+        </script>
+        <script src="../../assets/Scripts/script.js"></script>
+        <script src="../../assets/Scripts/navbar.js"></script>
+    </body>
+
+</html>

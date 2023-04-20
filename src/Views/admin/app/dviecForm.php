@@ -12,7 +12,7 @@
                   <label for="diachi">Địa Chỉ</label>
                   <input name="diachi" type="text" class="form-control py-3" id="diachi" placeholder="Nhập địa chỉ..." required>
               </div>
-            <div class="d-sm-flex  flex-sm-row mt-4">
+            <div class="d-sm-flex flex-sm-row mt-4">
                 <div class="form-group col-sm-4">
                     <label for="linhvuc">Lĩnh Vực</label>
                     <select name="linhvuc" class="form-control" id="linhvuc">
@@ -143,7 +143,8 @@
                         <label for="tag-ip">Kỹ Năng</label>
                         <div class="d-flex flex-row">
                             <input class="form-control mt-2" type="text" id="tag-ip" placeholder="Yêu cầu kỹ năng cần thiết...">
-                            <span class="material-icons btn" value="" style="color:gray; font-size: 36px">add_circle_outline</span>
+                            
+                            <span class="material-icons btn" value="" style="color:gray; font-size: 24px">add_circle_outline</span>
                         </div>
                     </div>
                     <div class="tag-list"></div>
