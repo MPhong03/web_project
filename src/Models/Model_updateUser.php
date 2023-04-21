@@ -59,4 +59,45 @@ class Model_updateUser{
         return 1;
         else return 0;
     }
+
+    public function checkEmail($email) {
+        require("../connection.php");
+        $sql = $conn -> query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email';");
+        if($sql) {
+            return $sql;
+        } else {
+            die("Email doesn't exist");
+        }
+    }
+
+    public function updatePassword($email, $password) {
+        require("../connection.php");
+        $sql = $conn -> query("UPDATE TaiKhoanNguoiTimViec SET matkhau = '$password' WHERE email = '$email';");
+        if($sql) {
+            return $sql;
+        } else {
+            die("Update fail");
+        }
+    }
+
+    public function updateOTP($email, $otp) {
+        require("../connection.php");
+        $sql = $conn -> query("UPDATE TaiKhoanNguoiTimViec SET otp = '$otp' WHERE email = '$email';");
+        if($sql) {
+            return $sql;
+        } else {
+            die("Update fail");
+        }
+    }
+
+    public function checkOTP($email, $otp) {
+        require("../connection.php");
+        $sql = $conn -> query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email' AND otp = '$otp';");
+        if($sql) {
+            return $sql;
+        } else {
+            die("Update fail");
+        }
+    }
+
 }

@@ -39,9 +39,7 @@
               <span class="input-group-text text-tiemkiem" id="inputGroup-sizing-default">
                 <i class="bi bi-search"></i>
               </span>
-              <input id="myInput" type="text" name="search-work" class="form-control search-input"
-                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value
-                placeholder="Nhập tên công ty" autocomplete="off">
+              <input class="form-control myInputSearch" id="myInput2" type="text" autocomplete="off" placeholder="Search..">
               <!-- <span><i class="fa fa-search" aria-hidden="true"></i></span> -->
             </div>
           </div>

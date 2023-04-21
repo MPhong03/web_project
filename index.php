@@ -36,6 +36,9 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap")
 </head>
 
 <body>
+	<!-- <h1>MVC Example</h1>
+	<h3>Menu:</h3>
+	<h3>1. <a href="./Controllers/C_student.php">Quan li hoc sinh</a></h3> -->
 
 	<div id="main">
 		<?php

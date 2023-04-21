@@ -6,22 +6,19 @@ if (isset($_GET["timviec"])){
     }else{
         header("Location: ./src/Controllers/C_SignIn.php");
     }
-} else
-if (isset($_GET["dangviec"])){ //admin
+} else if (isset($_GET["dangviec"])){ //admin
     if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap"){
         header("Location: ./src/Views/admin/dviec.php");
     }else{
         header("Location: ./src/Controllers/C_SignIn.php");
     }
-} else
-if (isset($_GET["taocv"])){
+} else if (isset($_GET["taocv"])){
     if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap"){
         Header("location: ./src/Views/user/createcv.php");
     }else{
         header("Location: ./src/Controllers/C_SignIn.php");
     }
-} else
-if (isset($_GET["ungtuyenngay"])){ //client + admin
+} else if (isset($_GET["ungtuyenngay"])){ //client + admin
     if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap"){
         include("./src/Controllers/C_UngTuyenNgay.php");
         if ($_SESSION["who"]=='Client'){
@@ -40,8 +37,7 @@ if (isset($_GET["ungtuyenngay"])){ //client + admin
     }else{
         header("Location: ./src/Controllers/C_SignIn.php");
     }
-} else
-if (isset($_GET["yeuthich"])){//client + admin
+} else if (isset($_GET["yeuthich"])){//client + admin
     if(isset($_SESSION["user"]) && $_SESSION["user"]=="dadangnhap"){
         include("./src/Controllers/C_SendLike.php");
         if ($_SESSION["who"]=='Client'){

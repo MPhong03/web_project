@@ -64,7 +64,7 @@ class FormLogin
               </div> -->
               
               <div class="pass">
-                <a href="../../index.php">Quên mật khẩu?</a>
+                <a href="../Views/layouts/Authentication.php">Quên mật khẩu?</a>
               </div>
 
               <div class="">

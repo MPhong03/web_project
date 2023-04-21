@@ -45,5 +45,6 @@ class Model_GetUser{
             die("Can't get job from database");
         }
     }
+
 }
 ?>
