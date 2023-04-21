@@ -9,7 +9,7 @@ function returnAll($id)
     if ($sql) {
         $data = array();
         while ($r = $sql->fetch_assoc()) {
-            $data[] = ["phucloi" => $r["phucloi"],"linhvuc" => $r["linhvuc"],"linkava" => $r["linkava"],"motacongty" => $r["motacongty"],"website" => $r["website"],"diachi" => $r["diachi"],"TenCongTy" => $r["TenCongTy"],"thanhpho" => $r["thanhpho"], "sdt" => $r["sdt"], "email" => $r["email"]];
+            $data[] = ["phucloi" => $r["phucloi"], "quymonhansu" => $r["quymonhansu"], "masothue" => $r["masothue"], "linhvuc" => $r["linhvuc"], "linkava" => $r["linkava"], "motacongty" => $r["motacongty"], "website" => $r["website"], "diachi" => $r["diachi"], "TenCongTy" => $r["TenCongTy"], "thanhpho" => $r["thanhpho"], "sdt" => $r["sdt"], "email" => $r["email"]];
         }
     } else {
         die("Can't get job from database");
@@ -17,4 +17,3 @@ function returnAll($id)
     return $data[0];
 }
 $data = returnAll($_SESSION["IDUser"]);
-?>
