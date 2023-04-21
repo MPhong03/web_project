@@ -96,8 +96,6 @@ if (isset($_GET["idcongty"]) && $_SESSION["who"] == 'Client') {
                 <div class="card-body">
                     <p><i class="bi bi-globe-asia-australia"></i>&nbsp <b>Website:</b>&nbsp<?php echo $data["website"] ?></p>
                     <p><i class="bi bi-layout-text-sidebar-reverse"></i>&nbsp <b>Lĩnh vực:</b>&nbsp<?php echo $data["linhvuc"] ?></p>
-                    <p><i class="bi bi-filter-square-fill"></i></i>&nbsp <b>Mã số thuế:</b>&nbsp<?php echo $data["masothue"] ?></p>
-                    <p><i class="bi bi-people-fill"></i></i>&nbsp <b>Quy mô nhân sự:</b>&nbsp<?php echo $data["quymonhansu"] ?></p>
                     <p><i class="bi bi-piggy-bank-fill"></i>&nbsp <b>Phúc lợi:</b>&nbsp<?php echo $data["phucloi"] ?></p>
                     <p><i class="bi bi-book-half"></i>&nbsp&nbsp<b>Mô tả:</b>&nbsp<?php echo $data["motacongty"] ?></p>
                 </div>
