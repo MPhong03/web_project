@@ -10,7 +10,7 @@ function returnAll()
     if ($sql) {
         $data = array();
         while ($r = $sql->fetch_assoc()) {
-            $data[] = ["thanhpho" => $r["thanhpho"], "ngoaingu" => $r["ngoaingu"], "loaicongviec" => $r["loaicongviec"], "hoten" => $r["hoten"], "linkava" => $r["linkava"], "congviec" => $r["congviec"], "ngaysinh" => $r["ngaysinh"], "gioitinh" => $r["gioitinh"], "linhvuc" => $r["linhvuc"], "diachi" => $r["diachi"], "muctieunghenghiep" => $r["muctieunghenghiep"], "hocvan" => $r["hocvan"], "kinang" => $r["kinang"], "kinhnghiemlamviec" => $r["kinhnghiemlamviec"], "chitiet" => $r["chitiet"], "tagkinang" => $r["tagkinang"], "sdt" => $r["sdt"], "email" => $r["email"]];
+            $data[] = ["thanhpho" => $r["thanhpho"], "loaicongviec" => $r["loaicongviec"], "hoten" => $r["hoten"], "linkava" => $r["linkava"], "congviec" => $r["congviec"], "ngaysinh" => $r["ngaysinh"], "gioitinh" => $r["gioitinh"], "linhvuc" => $r["linhvuc"], "diachi" => $r["diachi"], "muctieunghenghiep" => $r["muctieunghenghiep"], "hocvan" => $r["hocvan"], "kinang" => $r["kinang"], "kinhnghiemlamviec" => $r["kinhnghiemlamviec"], "chitiet" => $r["chitiet"], "tagkinang" => $r["tagkinang"], "sdt" => $r["sdt"], "email" => $r["email"]];
         }
     } else {
         die("Can't get job from database");
@@ -53,9 +53,7 @@ foreach ($tagkinang as $tag) {
             </div>
             <div class="col-xl-8">
                 <div class="card shadow mb-4">
-                    <div class="card-header fw-bold text-center">
-                        <h4>Thông tin người tìm việc</h4>
-                    </div>
+                  <div class="card-header fw-bold text-center"><h4>Thông tin người tìm việc</h4></div>
                     <div class="card-body">
                         <form>
                             <!-- Form Group (Thông tin cá nhân)-->
@@ -105,15 +103,9 @@ foreach ($tagkinang as $tag) {
                             </div>
                             <!-- Form Group (Thông tin công việc)-->
                             <h6 class="fw-bold">Thông tin công việc</h6>
-                            <div class="row gx-3 mb-3">
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="namework">Công việc</label>
-                                    <input value='<?php echo $data["congviec"] ?>' name="congviec" type="text" class="form-control py-3" id="namework" placeholder="Vui lòng nhập công việc" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="language">Ngoại ngữ</label>
-                                    <input value='<?php echo $data["ngoaingu"] ?>' name="language" type="text" class="form-control py-3" id="namework" placeholder="Bạn có thể sử dụng ngôn ngữ nào" required>
-                                </div>
+                            <div class="mb-3">
+                                <label class="small mb-1" for="namework">Công việc</label>
+                                <input value='<?php echo $data["congviec"] ?>' name="congviec" type="text" class="form-control py-3" id="namework" placeholder="Vui lòng nhập công việc" required>
                             </div>
                             <div class="row gx-3 mb-3">
                                 <div class="col-md-6">
