@@ -48,6 +48,7 @@ create table TaiKhoanNguoiTimViec(
 	matkhau varchar(30) not null,
 	sdt varchar(11) not null,
 	email varchar(100) not null,
+	otp int(7) null,
 	primary key(TenDangNhap, email),
 	foreign key (MaNguoiTimViec) references NguoiTimViec(MaNguoiTimViec)
 );
