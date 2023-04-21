@@ -84,6 +84,10 @@ function showAllDataUser(data) {
                                             <h6>Giới thiệu bản thân</h6>
                                             <p class="text-secondary">${data.chitiet}</p>
                                         </div>
+                                        <div class="col-12 mb-3">
+                                            <h6>Ngoại ngữ</h6>
+                                            <p class="text-secondary">${data.ngoaingu}</p>
+                                        </div>
                                     </div>                                    
                                 </div>
                             </div>
