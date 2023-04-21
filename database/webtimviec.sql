@@ -127,7 +127,8 @@ INSERT INTO `congty` (`MaCongTy`, `TenCongTy`, `diachi`, `website`, `masothue`, 
 (1, 'FPT', '52B QL50, Phong Phú, Bình Chánh', 'fpt.com.vn', 'ABC123', 'FPT tiếp tục theo đuổi mục tiêu lớn dài hạn trở thành doanh nghiệp số và đứng trong Top 50 Công ty hàng đầu thế giới về cung cấp dịch vụ, giải pháp chuyển đổi số toàn diện vào năm 2030.', '../../../src/assets/Images/avaAdmin/fpt.jpg', 'Công nghệ - thông tin', 'Hồ Chí Minh', 'Mức lương và thu nhập hấp dẫn\r\nMôi trường làm việc thân thiện, chuyên nghiệp', 250),
 (2, 'VNG', 'Z06 Số 13, Tân Thuận Đông, Quận 7', 'vng.com.vn', 'ABC123', 'Được thành lập từ năm 2004, Công ty Cổ phần VNG hiện tại là công ty công nghệ hàng đầu Việt Nam.', '../../../src/assets/Images/avaAdmin/vng.png', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Chăm sóc sức khỏe bảo hiểm\r\nKhông gian làm việc sáng tạo', 100),
 (3, 'Google', 'số 09 Phố Duy Tân, P. Dịch Vọng Hậu, Q. ', 'google.com', 'ABC123', 'Google được thành lập vào năm 1998 bởi Larry Page và Sergey Brin trong khi họ là nghiên cứu sinh đã có bằng tiến sĩ tại Đại học Stanford ở California.', '../../../src/assets/Images/avaAdmin/google2.png', 'Công nghệ - thông tin', 'Hà Nội', 'Mức lương và thu nhập hấp dẫn\r\nMôi trường làm việc sáng tạo', 150),
-(4, 'facebook', 'Z06 Số 13, Tân Thuận Đông, Quận 7', 'facebook.com', 'ABC123', 'Facebook là một mạng xã hội trực tuyến lớn nhất thế giới, được thành lập vào năm 2004 bởi Mark Zuckerberg. ', '../../../src/assets/Images/avaAdmin/Facebook.jpg', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Mức lương và thu nhập hấp dẫn\r\nMôi trường làm việc sáng tạo', 200);
+(4, 'facebook', 'Z06 Số 13, Tân Thuận Đông, Quận 7', 'facebook.com', 'ABC123', 'Facebook là một mạng xã hội trực tuyến lớn nhất thế giới, được thành lập vào năm 2004 bởi Mark Zuckerberg. ', '../../../src/assets/Images/avaAdmin/Facebook.jpg', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Mức lương và thu nhập hấp dẫn\r\nMôi trường làm việc sáng tạo', 200),
+(5, 'Đại học Tôn Đức Thắng', '19, Nguyễn Hữu Thọ, Quận 7', 'tdtu.com', 'ABC123', 'Chúng ta đang đi trên con đường đầy hoa và nắng, biết bao tự hào là sinh viên của Tôn Đức Thắng. ', '../../../src/assets/Images/avaAdmin/TDTU.png', 'Giáo dục', 'Thành phố Hồ Chí Minh', 'Mức lương và thu nhập hấp dẫn\r\nMôi trường làm việc sáng tạo', 2000);
 
 INSERT INTO `dangviec` (`MaDangTin`, `MaCongTy`, `tencongviec`, `linhvuc`, `chucvu`, `luong`, `loaicongviec`, `diachi`, `sdt`, `email`, `motacongviec`, `tagkinang`, `thoihan`, `yeucaucongviec`, `yeucaubangcap`, `quyenloi`, `soluongtuyendung`) VALUES
 (1, 1, 'Lập trình BackEnd', 'Công Nghệ Thông Tin', 'nhân viên', '10000000', 1, 'Tôn Đức Thắng', '0562854976', 'congty@gmail.com', 'công việc lập trình', 'php,html,js,java', '2023-06-06', '', '', '', 1),
@@ -136,24 +137,29 @@ INSERT INTO `dangviec` (`MaDangTin`, `MaCongTy`, `tencongviec`, `linhvuc`, `chuc
 (4, 1, 'Lập trình nhúng', 'Công Nghệ Thông Tin', 'nhân viên', '10000000', 1, 'Tôn Đức Thắng', '0562854976', 'congty@gmail.com', 'công việc lập trình', 'php,html,js,java', '2023-06-06', '', '', '', 1),
 (5, 3, 'quản lí dự án', 'Công Nghệ Thông Tin', 'nhân viên', '10000000', 1, 'Tôn Đức Thắng', '0562854976', 'congty@gmail.com', 'công việc lập trình', 'php,html,js,java', '2023-06-06', '', '', '', 1),
 (6, 4, 'Tester Java', 'Công Nghệ Thông Tin', 'nhân viên', '10000000', 1, 'Tôn Đức Thắng', '0562854976', 'congty@gmail.com', 'công việc lập trình', 'php,html,js,java', '2023-06-06', '', '', '', 1),
-(7, 2, 'Lập trình Java, Serverlet', 'Công nghệ thông tin', 'Lập trình viên', '10000000', 1, 'Tôn Đức Tháng', '123456789', 'dangminhphong912@gmail.com', '- Tích cực\r\n- Sáng tạo\r\n- Phụng sự', 'java,oop,mysql', '2023-04-30', 'Hiểu Java, OOP\r\nCấu trúc dữ liệu và giải thuật', 'đại học', 'Lương tháng 13\r\nĂn cơm 2 bữa', 3);
+(7, 2, 'Lập trình Java, Serverlet', 'Công nghệ thông tin', 'Lập trình viên', '10000000', 1, 'Tôn Đức Tháng', '123456789', 'dangminhphong912@gmail.com', '- Tích cực\r\n- Sáng tạo\r\n- Phụng sự', 'java,oop,mysql', '2023-04-30', 'Hiểu Java, OOP\r\nCấu trúc dữ liệu và giải thuật', 'đại học', 'Lương tháng 13\r\nĂn cơm 2 bữa', 3),
+(8, 5, 'Giảng viên Tiếng Anh', 'Giáo dục', 'Giảng viên', '10000000', 1, 'Tôn Đức Tháng', '123456789', 'dangminhphong912@gmail.com', '- Tích cực\r\n- Sáng tạo\r\n- Phụng sự', 'toeic,pet,ielts', '2023-7-12', 'Có khả năng giảng dạy\r\nTiếng Anh vững', 'đại học', 'Lương tháng 13\r\nĂn cơm 2 bữa', 3);
 
 INSERT INTO `nguoitimviec` (`MaNguoiTimViec`, `hoten`, `linkava`, `congviec`, `ngaysinh`, `gioitinh`, `loaicongviec`, `ngoaingu`, `linhvuc`, `thanhpho`, `diachi`, `muctieunghenghiep`, `hocvan`, `kinang`, `kinhnghiemlamviec`, `chitiet`, `tagkinang`) VALUES
 (1, 'Đặng Minh Phong', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-10-26', 1, 0, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Lập trình', '12/12', 'Lập trình', '2 năm với Java', 'Something...', 'java,.net,c#,php'),
 (2, 'Dương Đình Chí Long', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php'),
 (3, 'Phạm Nhật Quỳnh', '../../../src/assets/Images/avaClient/18-F3.png', 'Lập trình viên', '2000-01-01', 1, 0, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', 'php'),
 (4, 'Lê Gia Huy', '../../../src/assets/Images/avaClient/avatar.jpg', 'Lập trình viên', '2003-01-01', 1, 1, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',php,java'),
-(5, 'Nguyễn Thành Đô', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php');
+(5, 'Nguyễn Thành Đô', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php'),
+(6, 'Người tìm việc', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'IELTS 7.5, TOEIC 800', 'Công nghệ - thông tin', 'Thành phố Hồ Chí Min', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php');
 
 INSERT INTO `taikhoancongty` (`MaCongTy`, `TenDangNhap`, `matkhau`, `sdt`, `email`) VALUES
 (4, 'facebook', '123456', '0123456789', 'facebook@gmail.com'),
 (1, 'fpt', '123456', '0123456789', 'fpt@gmail.com'),
 (3, 'google', '123456', '0123456789', 'google@gmail.com'),
-(2, 'vng', '123456', '0123456789', 'vng@gmail.com');
+(2, 'vng', '123456', '0123456789', 'vng@gmail.com'),
+(5, 'admin', '123456', '0123456789', 'tdt@gmail.com');
 
 INSERT INTO `taikhoannguoitimviec` (`MaNguoiTimViec`, `TenDangNhap`, `matkhau`, `sdt`, `email`) VALUES
 (2, 'chilong', '123456', '0123456789', 'duongdinhchilong@gmail.com'),
 (4, 'giahuy', '123456', '0123456789', 'legiahuy@gmail.com'),
 (1, 'minhphong', '123456', '0123456789', 'dangminhphong@gmail.com'),
 (3, 'nhatquynh', '123456', '0123456789', 'phamnhatquynh@gmail.com'),
-(5, 'thanhdo', '123456', '0123456789', 'nguyenthanhdo@gmail.com');
+(5, 'thanhdo', '123456', '0123456789', 'nguyenthanhdo@gmail.com'),
+(6, 'user', '123456', '0123456789', 'user@gmail.com');
+
