@@ -1,5 +1,5 @@
 <?php
-    //require_once("check.php");
+    require_once("check.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,13 +58,15 @@
         <div id="content">
             <div class="container container-content" style="min-height:70vh;">
                 <div class="row">
-                    <div class="col-sm-12 col-congviecdathich">
-                        <div class="col-sm-12 format-text-heading" style="color:mediumseagreen ">
+                    <div class="col-sm-12 col-nguoitimviecdathich">
+                        <div class="col-sm-12 format-text-heading">
                             <h4>Công việc đã thích</h4>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap" id="wrapSaveCT" style="color:mediumseagreen ">
+                    <div class="d-flex flex-wrap" id="wrapSaveCT">
+
                     </div>
+
                 </div>
             </div>
         </div>

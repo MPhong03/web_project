@@ -138,11 +138,13 @@ function Data_yeucautuyendung(data){
                     Xem hồ sơ
                 </a>
             </div>
+
         </td>
         <td>
             ${trangthai}
         </td>
-    </tr>`;
+    </tr>
+        `;
     }
     table.html(resTable);
 }
