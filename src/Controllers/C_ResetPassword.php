@@ -3,7 +3,7 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
-        $model = new Model_updateUser($db);
+        $model = new Model_updateUser();
     
         // Kiểm tra xem email có tồn tại trong cơ sở dữ liệu hay không
         if (!$model->checkEmail($email)) {
@@ -21,10 +21,15 @@
         }
     
         // Gửi email chứa mã OTP đến địa chỉ email của người dùng
-        // Code gửi email ở đây
+        // Function: mail($to ,$subject ,$message, [$headers], [$parameters]);
+        $to = $email;
+        $subject = "[SEEKER] Mã OTP để đặt lại mật khẩu";
+        $message = "Mã OTP của bạn là: $otp";
+        $headers = "From: SEEKER \r\n";
+        mail($to, $subject, $message, $headers);
     
         // Chuyển hướng người dùng đến trang xác nhận OTP
-        header("Location: otp_verification_form.php?email=" . urlencode($email));
+        header("Location: ../Views/layouts/Verification.php?email=" . urlencode($email));
         exit();
     }
 ?>
