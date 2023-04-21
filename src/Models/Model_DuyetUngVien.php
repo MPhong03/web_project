@@ -29,7 +29,7 @@ class Model_DuyetUngVien{
     }
     function dongyduyet($id, $idbaidang){
         require("../connection.php");
-        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 1, MaDangTin = $idbaidang, MaNguoiTimViec = $id;");
+        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 1 WHERE MaDangTin = $idbaidang AND MaNguoiTimViec = $id;");
         if ($sql) 
             return $sql;
         else {
@@ -38,7 +38,7 @@ class Model_DuyetUngVien{
     }
     function tuchoiduyet($id, $idbaidang){
         require("../connection.php");
-        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 0, MaDangTin = $idbaidang, MaNguoiTimViec = $id;");
+        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 0 WHERE MaDangTin = $idbaidang AND MaNguoiTimViec = $id;");
         if ($sql) 
             return $sql;
         else {
