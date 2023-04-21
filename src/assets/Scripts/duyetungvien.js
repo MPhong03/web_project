@@ -5,14 +5,14 @@ $(function () {
 function duyetungvien(){
     $.post("../../../src/Controllers/C_DuyetUngVien.php", {
         type: 0,
-      }).done(function (data, status) {
+    }).done(function (data, status) {
         data = JSON.parse(data);
-        console.log(data);
-        console.log(status);
+        // console.log(data);
+        // console.log(status);
         if (status) {
-          Data_DuyetUngVien(data);
+            Data_DuyetUngVien(data);
         }
-      });
+    });
 }
 function Data_DuyetUngVien(data){
     let table1 = $("table#duyetungvien").children("tbody");
@@ -49,14 +49,14 @@ function Data_DuyetUngVien(data){
             </td>
             <td>
                 <div class="format-btn-dongy">
-                    <button onclick="dongyduyet(${data[i]["MaNguoiTimViec"]})" class="btn-dongy" aria-haspopup="true" aria-expanded="false">
+                    <button onclick="dongyduyet(${data[i]["MaNguoiTimViec"]}, ${data[i]["MaDangTin"]})" class="btn-dongy" aria-haspopup="true" aria-expanded="false">
                         <span>
                             Duyệt đơn
                         </span>
                     </button>
                 </div>
                 <div class="format-btn-tuchoi" id="format-btn-tuchoi-id">
-                    <button onclick="tuchoiduyet(${data[i]["MaNguoiTimViec"]})" class="btn-tuchoi" id="btn-tuchoi-id" aria-haspopup="true" aria-expanded="false">
+                    <button onclick="tuchoiduyet(${data[i]["MaNguoiTimViec"]}, ${data[i]["MaDangTin"]})" class="btn-tuchoi" id="btn-tuchoi-id" aria-haspopup="true" aria-expanded="false">
                         <span>
                             Loại đơn
                         </span>
@@ -101,14 +101,14 @@ function Data_DuyetUngVien(data){
 function yeucautuyendung(){
     $.post("../../../src/Controllers/C_DuyetUngVien.php", {
         type: 1,
-      }).done(function (data, status) {
+    }).done(function (data, status) {
         data = JSON.parse(data);
-        console.log(data);
-        console.log(status);
+        // console.log(data);
+        // console.log(status);
         if (status) {
-          Data_yeucautuyendung(data);
+            Data_yeucautuyendung(data);
         }
-      });
+    });
 }
 function Data_yeucautuyendung(data){
     let table = $("table#yeucautuyendung").children("tbody");
@@ -149,27 +149,31 @@ function Data_yeucautuyendung(data){
     table.html(resTable);
 }
 
-function dongyduyet(id){
+function dongyduyet(id, idbaidang){
     $.post("../../../src/Controllers/C_DuyetUngVien.php", {
         type: 2,
-        idcongty: id
-      }).done(function (data, status) {
+        id: id,
+        idbaidang: idbaidang
+    }).done(function (data, status) {
         data = JSON.parse(data);
-        console.log("dong y duyet: "+data);
+        console.log("dong y duyet: " + data);
+        console.log(status);
         if (status) {
             duyetungvien();
         }
-      });
+    });
 }
-function tuchoiduyet(id){
+function tuchoiduyet(id, idbaidang){
     $.post("../../../src/Controllers/C_DuyetUngVien.php", {
         type: 3,
-        idcongty: id
+        id: id,
+        idbaidang: idbaidang
     }).done(function (data, status) {
         data = JSON.parse(data);
         console.log("tu choi duyet: "+data);
+        console.log(status);
         if (status) {
             duyetungvien();
         }
-      });
+    });
 }

@@ -27,18 +27,18 @@ class Model_DuyetUngVien{
             die("Can't get job from database");
         }
     }
-    function dongyduyet($id, $idcongty){
+    function dongyduyet($id, $idbaidang){
         require("../connection.php");
-        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 1, MaDangTin = $idcongty, MaNguoiTimViec = $id;");
+        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 1, MaDangTin = $idbaidang, MaNguoiTimViec = $id;");
         if ($sql) 
             return $sql;
         else {
             die("Can't get job from database");
         }
     }
-    function tuchoiduyet($id, $idcongty){
+    function tuchoiduyet($id, $idbaidang){
         require("../connection.php");
-        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 0, MaDangTin = $idcongty, MaNguoiTimViec = $id;");
+        $sql = $conn -> query("UPDATE UngTuyen SET daduyet = 0, MaDangTin = $idbaidang, MaNguoiTimViec = $id;");
         if ($sql) 
             return $sql;
         else {

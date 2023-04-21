@@ -24,19 +24,19 @@ class DuyetUngVien{
         }
         echo json_encode($data);
     }
-    public function dongyduyet($idcongty){
+    public function dongyduyet($id, $idbaidang){
         session_start();
-        require_once("../Models/Model_DuyetCongViec.php");
-        $Model_DuyetCongViec = new Model_DuyetCongViec();
-        $res = $Model_DuyetCongViec -> dongyduyet($_SESSION["IDUser"],$idcongty);
+        require_once("../Models/Model_DuyetUngVien.php");
+        $Model_DuyetCongViec = new Model_DuyetUngVien();
+        $res = $Model_DuyetCongViec -> dongyduyet($id, $idbaidang);
         if ($res) echo json_encode(1);
         else echo json_encode(0);
     }
-    public function tuchoiduyet($idcongty){
+    public function tuchoiduyet($id, $idbaidang){
         session_start();
-        require_once("../Models/Model_DuyetCongViec.php");
-        $Model_DuyetCongViec = new Model_DuyetCongViec();
-        $res = $Model_DuyetCongViec -> tuchoiduyet($_SESSION["IDUser"],$idcongty);
+        require_once("../Models/Model_DuyetUngVien.php");
+        $Model_DuyetCongViec = new Model_DuyetUngVien();
+        $res = $Model_DuyetCongViec -> tuchoiduyet($id, $idbaidang);
         if ($res) echo json_encode(1);
         else echo json_encode(0);
     }
@@ -47,7 +47,7 @@ if ($_POST["type"]=="0"){
 } else if ($_POST["type"]=="1"){
     $DuyetUngVien ->yeucautuyendung();
 } else if ($_POST["type"]=="2"){
-    $DuyetUngVien ->dongyduyet($_POST["idcongty"]);
+    $DuyetUngVien ->dongyduyet($_POST["id"], $_POST["idbaidang"]);
 } else if ($_POST["type"]=="3"){
-    $DuyetUngVien ->tuchoiduyet($_POST["idcongty"]);
+    $DuyetUngVien ->tuchoiduyet($_POST["id"], $_POST["idbaidang"]);
 }
