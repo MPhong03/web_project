@@ -16,23 +16,17 @@
                 <div class="form-group col-sm-4">
                     <label for="linhvuc">Lĩnh Vực</label>
                     <select name="linhvuc" class="form-control" id="linhvuc">
-                        <option>Công nghệ thông tin</option>
-                        <option>Viễn thông</option>
-                        <option>Marketing / Truyền thông / Quảng cáo</option>
-                        <option>Nhà hàng / Khách sạn</option>
-                        <option>Thời trang</option>
-                        <option>Internet / Online</option>
-                        <option>Bất động sản</option>
-                        <option>Dược phẩm / Y tế / Công nghệ sinh học</option>
-                        <option>Kế toán / Kiểm toán</option>
+                        <option>Công nghệ - thông tin</option>
+                        <option>Sản xuất và chế biến</option>
+                        <option>Kiến trúc và xây dựng</option>
                         <option>Kinh doanh</option>
-                        <option>Giáo dục</option>
-                        <option>Văn phòng</option>
-                        <option>Bảo hiểm</option>
-                        <option>Luật</option>
-                        <option>Giải trí</option>
-                        <option>Agency</option>
-                        <option>Tài chính / Ngân Hàng</option>
+                        <option>Thời trang</option>
+                        <option>Luật - nhân văn</option>
+                        <option>Nghệ thuật - thẩm mỹ - đồ họa</option>
+                        <option>Báo chí - khoa học và xã hội</option>
+                        <option>Khoa học cơ bản</option>
+                        <option>Sư phạm</option>
+                        <option>Nông - lâm - ngư nghiệp</option>
                         <option>Khác</option>
                     </select>
                 </div>
