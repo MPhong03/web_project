@@ -1,26 +1,27 @@
 <?php
-class Model_updateUser{
-    public function updateUser($id,$hoten,$congviec,$ngaysinh,$gioitinh,$loaicongviec,$linhvuc,$sdt,$email,$thanhpho,$diachi,$muctieunghenghiep,$hocvan,$kinang,$kinhnghiem,$chitiet,$tagkinang){
+class Model_updateUser
+{
+    public function updateUser($id, $hoten, $congviec, $ngaysinh, $gioitinh, $loaicongviec, $ngoaingu, $linhvuc, $thanhpho, $diachi, $muctieunghenghiep, $hocvan, $kinang, $kinhnghiem, $chitiet, $tagkinang)
+    {
         require("../connection.php");
-        $sql = $conn -> query("UPDATE NguoiTimViec SET 
-            hoten = '$hoten', congviec = '$congviec', 
-            ngaysinh = '$ngaysinh', loaicongviec = '$loaicongviec', 
-            gioitinh = '$gioitinh', tagkinang = '$tagkinang', 
-            linhvuc = '$linhvuc', thanhpho = '$thanhpho',
+        $sql = $conn->query("UPDATE NguoiTimViec SET 
+            hoten = '$hoten', congviec = '$congviec', ngaysinh = '$ngaysinh', gioitinh = '$gioitinh', loaicongviec = '$loaicongviec', 
+            ngoaingu = '$ngoaingu', linhvuc = '$linhvuc', thanhpho = '$thanhpho', 
             diachi = '$diachi', muctieunghenghiep = '$muctieunghenghiep', 
             hocvan = '$hocvan', kinang = '$kinang', 
-            kinhnghiemlamviec = '$kinhnghiem', chitiet = '$chitiet'
+            kinhnghiemlamviec = '$kinhnghiem', chitiet = '$chitiet', tagkinang = '$tagkinang'
         WHERE MaNguoiTimViec = '$id'");
-        $sql2 = $conn -> query("UPDATE TaiKhoanNguoiTimViec SET
+        $sql2 = $conn->query("UPDATE TaiKhoanNguoiTimViec SET
             sdt = '$sdt', email = '$email'
         WHERE MaNguoiTimViec = '$id'");
         if ($sql && $sql2)
-        return 1;
+            return 1;
         else return 0;
     }
-    public function dangviecAdmin($idcongty,$tencongviec,$yeucaubangcap,$linhvuc,$chucvu,$luong,$loaicongviec,$diachi,$soluongtuyendung,$sdt,$thoihan, $email,$motacongviec,$quyenloi,$yeucaucongviec,$tagkinang){
+    public function dangviecAdmin($idcongty, $tencongviec, $yeucaubangcap, $linhvuc, $chucvu, $luong, $loaicongviec, $diachi, $soluongtuyendung, $sdt, $thoihan, $email, $motacongviec, $quyenloi, $yeucaucongviec, $tagkinang)
+    {
         require("../connection.php");
-        $sql = $conn -> query("
+        $sql = $conn->query("
         insert into DangViec(
             MaCongTy,
             tencongviec,
@@ -44,60 +45,63 @@ class Model_updateUser{
         if ($sql) return 1;
         else return 0;
     }
-    public function updateAdmin($id,$TenCongTy,$linhvuc,$website,$sdt,$email,$thanhpho,$diachi,$motacongty,$phucloi){
+    public function updateAdmin($id, $TenCongTy, $diachi, $website, $masothue, $motacongty, $linhvuc, $thanhpho, $phucloi, $quymonhansu)
+    {
         require("../connection.php");
-        $sql = $conn -> query("UPDATE CongTy SET 
-            TenCongTy = '$TenCongTy', linhvuc = '$linhvuc', 
-            website = '$website',
-            thanhpho = '$thanhpho', motacongty = '$motacongty',
-            diachi = '$diachi', phucloi = '$phucloi'
+        $sql = $conn->query("UPDATE CongTy SET 
+            TenCongTy = '$TenCongTy', diachi = '$diachi',website = '$website', 
+            masothue = '$masothue',  motacongty = '$motacongty',linhvuc = '$linhvuc', 
+            thanhpho = '$thanhpho', phucloi = '$phucloi' , quymonhansu = '$quymonhansu' 
         WHERE MaCongTy = '$id'");
-        $sql2 = $conn -> query("UPDATE TaiKhoanCongTy SET
+        $sql2 = $conn->query("UPDATE TaiKhoanCongTy SET
             sdt = '$sdt', email = '$email'
         WHERE MaCongTy = '$id'");
         if ($sql && $sql2)
-        return 1;
+            return 1;
         else return 0;
     }
 
-    public function checkEmail($email) {
+    public function checkEmail($email)
+    {
         require("../connection.php");
-        $sql = $conn -> query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email';");
-        if($sql) {
+        $sql = $conn->query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email';");
+        if ($sql) {
             return $sql;
         } else {
             die("Email doesn't exist");
         }
     }
 
-    public function updatePassword($email, $password) {
+    public function updatePassword($email, $password)
+    {
         require("../connection.php");
-        $sql = $conn -> query("UPDATE TaiKhoanNguoiTimViec SET matkhau = '$password' WHERE email = '$email';");
-        if($sql) {
+        $sql = $conn->query("UPDATE TaiKhoanNguoiTimViec SET matkhau = '$password' WHERE email = '$email';");
+        if ($sql) {
             return $sql;
         } else {
             die("Update fail");
         }
     }
 
-    public function updateOTP($email, $otp) {
+    public function updateOTP($email, $otp)
+    {
         require("../connection.php");
-        $sql = $conn -> query("UPDATE TaiKhoanNguoiTimViec SET otp = '$otp' WHERE email = '$email';");
-        if($sql) {
+        $sql = $conn->query("UPDATE TaiKhoanNguoiTimViec SET otp = '$otp' WHERE email = '$email';");
+        if ($sql) {
             return $sql;
         } else {
             die("Update fail");
         }
     }
 
-    public function checkOTP($email, $otp) {
+    public function checkOTP($email, $otp)
+    {
         require("../connection.php");
-        $sql = $conn -> query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email' AND otp = '$otp';");
-        if($sql) {
+        $sql = $conn->query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email' AND otp = '$otp';");
+        if ($sql) {
             return $sql;
         } else {
             die("Update fail");
         }
     }
-
 }
