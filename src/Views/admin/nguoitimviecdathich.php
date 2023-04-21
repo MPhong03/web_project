@@ -50,9 +50,6 @@ require("check.php");
             right:0;
             left:0;
         }
-        h4{
-            color:#44A682;
-        }
     </style> 
     <div id="main">
         <?php

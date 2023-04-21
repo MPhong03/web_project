@@ -50,14 +50,14 @@ function Data_DuyetCongViec(data){
                 <div class="format-btn-dongy">
                     <button onclick="dongyduyet(${data[i]["MaCongTy"]})" class="btn-dongy" aria-haspopup="true" aria-expanded="false">
                         <span>
-                            <img class="format-img-done" src="../../../src/assets/Images/ic_done_24px.png" alt="">
+                            Duyệt
                         </span>
                     </button>
                 </div>
                 <div class="format-btn-tuchoi" id="format-btn-tuchoi-id">
                     <button onclick="tuchoiduyet(${data[i]["MaCongTy"]})" class="btn-tuchoi" id="btn-tuchoi-id" aria-haspopup="true" aria-expanded="false">
                         <span>
-                            <img class="format-img-clear" src="../../../src/assets/Images/ic_clear_24px.png" alt="">
+                            Từ Chối
                         </span>
                     </button>
                 </div>

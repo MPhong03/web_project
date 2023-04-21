@@ -30,9 +30,9 @@ $(function () {
           Math.abs(expired - moment) / (1000 * 60 * 60 * 24)
         );
         res+=`
-        <div onclick="gotoHomepageAdmin(${data[i]["id"]},${data[i]["idcongty"]})" class="offset-sm-auto mx-auto mb-3 col-12 col-sm-10 col-md-5 cards">
+        <div onclick="gotoHomepageAdmin(${data[i]["id"]},${data[i]["idcongty"]})" class="offset-sm-auto mx-auto mb-3 col-12 col-sm-10 col-md-7 cards">
           <div class="card card-format-border-left">
-              <div class="card-body">
+              <div class="card-body" style="color:#44A682">
 
                 <div class="row">
                   <div class="col-lg-4">
