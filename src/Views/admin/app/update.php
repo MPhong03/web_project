@@ -90,16 +90,6 @@ require_once('getDataAdminNow.php');
                                         <input value='<?php echo $data["website"] ?>' name="website" type="text" class="form-control py-3" id="website" placeholder="Nhập trang web của công ty" required>
                                     </div>
                                 </div>
-                                <div class="row gx-3 mb-3">
-                                    <div class="col-md-6">
-                                        <label class="small mb-1" for="quymonhansu">Quyn mô nhân sự</label>
-                                        <input value='<?php echo $data["quymonhansu"] ?>' name="quymonhansu" type="text" class="form-control py-3" id="diachi" placeholder="Nhập số lượng nhân sự" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="small mb-1" for="masothue">Mã số thuế</label>
-                                        <input value='<?php echo $data["masothue"] ?>' name="masothue" type="text" class="form-control py-3" id="diachi" placeholder="Nhập mã số thuế ở đây" required>
-                                    </div>
-                                </div>
                                 <div class="mb-3">
                                     <label class="small mb-1" for="phucloi">Phúc lợi</label>
                                     <textarea name="phucloi" class="form-control" rows="3" id="phucloi" placeholder="Mô tả phúc lợi ở đây" required><?php echo $data["phucloi"] ?></textarea>
