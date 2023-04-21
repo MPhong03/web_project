@@ -23,7 +23,7 @@ create table NguoiTimViec(
 	ngoaingu varchar(100) not null default "",
 	linhvuc varchar(100) not null default "",
 	thanhpho varchar(20) not null default "",
-	diachi varchar(50) not null default "",
+	diachi varchar(100) not null default "",
 	muctieunghenghiep varchar(1000) not null default "",
 	hocvan varchar(500) not null default "",
 	kinang varchar(400) not null default "",
@@ -35,7 +35,7 @@ create table NguoiTimViec(
 create table CongTy(
 	MaCongTy int primary key auto_increment not null,
 	TenCongTy VARCHAR(50) not null default "",
-	diachi VARCHAR(40) not null default "",
+	diachi VARCHAR(100) not null default "",
 	website varchar(50) not null default "",
 	masothue VARCHAR(50) not null default "",
 	motacongty varchar(2000) not null default "",
