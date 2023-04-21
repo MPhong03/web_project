@@ -4,8 +4,6 @@ require_once("./app/getDataAdminNow.php");
 if (isset($_GET["idcongty"]) && $_SESSION["who"] == 'Client') {
     $data = returnAll($_GET["idcongty"]);
 }
-$phucloi = $data['phucloi'];
-$gioithieu = $data["TenCongTy"] . '<br>' . $data["motacongty"] . '<br>' . $data["website"] . '<br>' . $data["linhvuc"] . '<br>' . $data["diachi"] . '<br>' . $data["sdt"] . '<br>' . $data["email"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
