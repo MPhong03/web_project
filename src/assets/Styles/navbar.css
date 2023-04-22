@@ -40,6 +40,21 @@
 
 /* -------------- */
 /* css for navbar */
+	.btn-menu:focus {
+		box-shadow: none
+	}
+
+	.btn-menu i {
+		font-size: 1.5em;
+	}
+
+	.format-name-user {
+		background: #eee;
+    	border-radius: 0 12px 12px 0;
+    	padding: 0px 10px 0px 0px;
+    	margin: 1px;
+	}
+
 	.format-img-user{
 		width: 40px;
 		height: 40px;
@@ -47,22 +62,24 @@
 		margin-top: 2px; */
 		border-radius:100%;
 	}
+
 	.containerBlockicon{
-		border-radius: 100%;
 		line-height: 40px;
 	}
+
 	.containerBlockicon:hover{
 		cursor: pointer;
 		box-shadow: 0 0 7px rgba(195, 196, 209, 0.58);
 	}
+
 	.format-img-notice{
 		border-radius: 6px;
 		width: 20px;
 	}
+	
 	.navbar-img-notice{
 		margin-top: 2px;
 		text-align: center;
-		background-color: #fff;
 		height: 40px;
 		width: 40px;
 		display: flex;
@@ -100,6 +117,9 @@
 	}
 	.filter-dropdown-container-user{
 		 position: relative;
+		 left: 20px;
+		 top: -3px;
+		 z-index: 1;
 	}
 
 	.filter-dropdown-container-user  .filter-dropdownlist-user {
