@@ -35,8 +35,9 @@ if (!empty($_FILES)) {
             if (move_uploaded_file($sourcePath, $targetPath)) {
                 if ($_SESSION["who"] == 'Admin')
                     changeAvatarAdmin($targetPath);
-                else changeAvatarClient($targetPath);
-                header("Location: ../../../src/Views/admin/pageinfoAdmin.php");
+                else {
+                    changeAvatarClient($targetPath);
+                }    
             } else {
                 header("Location: ../../../index.php");
             }
@@ -73,7 +74,7 @@ function changeAvatarClient($linkava)
         where MaNguoiTimViec = '$iduser';
     ");
     if ($sql)
-        header("Location: ../../../src/Views/admin/pageinfoAdmin.php");
+        header("Location: ../../../src/Views/user/pageinfouser.php");
     else {
         header("Location: ../../../index.php");
     }
