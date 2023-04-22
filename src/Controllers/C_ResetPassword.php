@@ -30,25 +30,33 @@
 
         $mail = new PHPMailer(true);
 
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'mnhfony@gmail.com';
-        $mail->Password = 'yvywjbnfkvyhuwgo';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port = 465;
-
-        $mail->setFrom('mnhfony@gmail.com', 'SEEKER Robot');
-        $mail->addAddress($email);
-
-        $mail->isHTML(true);
-        $mail->Subject = 'VERIFICATION EMAIL';
-        $mail->Body    = "<h1>Mã OTP của bạn là: $otp</h1>";
-
-        $mail->send();
+        try {
+            $mail->SMTPDebug = 2;
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'seekerrobot@gmail.com';
+            $mail->Password = 'ckwupvjwmqlhhbgl';
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
     
-        // Chuyển hướng người dùng đến trang xác nhận OTP
-        header("Location: ../Views/layouts/Verification.php?email=" . urlencode($email));
-        exit();
+            // seekerrobot@gmail.com
+            // seeker123456
+            $mail->setFrom('seekerrobot@gmail.com', 'SEEKER Robot');
+            $mail->addAddress($email);
+    
+            $mail->isHTML(true);
+            $mail->Subject = "OTP Verification";
+            $mail->Body = "<h1>Your OTP code is: $otp</h1>";
+    
+            $mail->send();
+            $mail->ClearAddresses();
+        
+            // Chuyển hướng người dùng đến trang xác nhận OTP
+            header("Location: ../Views/layouts/Verification.php?email=" . urlencode($email));
+            exit();
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
     }
 ?>
