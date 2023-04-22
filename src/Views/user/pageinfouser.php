@@ -31,7 +31,7 @@ require("check.php");
 	<link rel="stylesheet" href="../../../src/assets/Styles/pageinfouser.css">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>FindWork</title>
+	<title>SEEKER</title>
 </head>
 
 <body>
