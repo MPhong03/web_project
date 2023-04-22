@@ -27,11 +27,11 @@ class FormLogin
             <img class="img-fluid h-100" src="../assets/Images/ad-form.gif" alt="adv">
           </div>
 
-          <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center" style="background-color: #b0d4b8;">
-            <form action="../Controllers/C_SignIn.php" method="post" enctype="multipart/form" class="needs-validation" novalidate>
+          <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center vh-100" style="background-color: #b0d4b8;">
+            <form action="../Controllers/C_SignIn.php" method="post" enctype="multipart/form" class="needs-validation w-75" novalidate>
               <input type='hidden' name='SignIn' value='true'>
-              <h1 class="text-left"><a style="text-decoration:none;color:black;" href="../../../index.php">SEEKER</a></h1>
-              <h1 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h1><br>
+              <h1 class="text-left"><a style="text-decoration:none; color:black;" href="../../../index.php">SEEKER</a></h1>
+              <h3 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h3><br>
               <div class="form-group">
                 <label for="username">Tài khoản</label>
                 <input name="taikhoan" value='<?= $previousUser ?>' type="text" class="form-control" id="username" required>
@@ -68,7 +68,8 @@ class FormLogin
               </div>
 
               <div class="">
-                <div class="signup_link">Bạn chưa có tài khoản? <a href="./C_Register.php">Đăng ký</a>
+                <div class="signup_link mt-4">Bạn chưa có tài khoản? 
+                  <a class="btn btn-outline-dark ms-1" href="./C_Register.php">Đăng ký</a>
                 </div>
               </div>
             </form>
