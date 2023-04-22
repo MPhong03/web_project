@@ -16,11 +16,12 @@
 <body>
   <div class="container-fluid">
     <div class="row justify-content-center">
-
+      <!-- LEFT: Image -->
       <div class="col-md-6 col-lg-6 d-none d-md-block vh-100">
         <img class="img-fluid h-100" src="../assets/Images/ad-form.gif" alt="adv">
       </div>
 
+      <!-- RIGHT: FORM -->
       <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center pt-5" style="background-color: #b0d4b8;">
       <form id="form" action="../../../src/Controllers/C_Register.php" method="post" enctype="multipart/form" class="needs-validation w-75" novalidate>
           <input type='hidden' name='SignIn' value='true'>
