@@ -5,9 +5,11 @@
             <a class="navbar-brand" href="../../../../index.php">
 				<img src="../../../src/assets/Images/logo.png" alt="logo" height="80" loading="lazy" width="80">
 			</a>
-            <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
+			<button class="navbar-toggler btn-menu border-0" id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list"></i>
+			</button>
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <!-- RIGHT -->
@@ -23,14 +25,13 @@
 
                 <!-- LEFT -->
                 <ul class="navbar-nav mt-2 mt-lg-0" id="identity_user">
-                    <a class="nav-link active format-name-user">William Shakespeare</a>
                     <div class="filter-dropdown-container-user">
                         <button class="format-btn-user" id="btn-user" style="background-color:transparent !important;">
                             <span class="containerBlockicon" style="max-height:40px;max-width:40px;margin-left:5px;margin-top:2px;"><img class="format-img-user" src="./Images/18-F.png" alt=""></span>
                         </button>
                         <ul class="filter-dropdownlist-user" id="filter-btn-user">
                             <li class="filter-dropdownlistItem">
-                                <a href="./capnhatdoanhnghiep.php" class="filter-dropdownlistitemLink">Chỉnh sửa thông tin</a>
+                                <a href="./capnhatdoanhnghiep.php" class="filter-dropdownlistitemLink">Thông tin của bạn</a>
                             </li>
                             <li class="filter-dropdownlistItem format-border-top">
                                 <a href="./duyetcongviec.php" class="filter-dropdownlistitemLink">Duyệt công việc</a>
@@ -44,6 +45,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="navbar-img-notice filter-dropdown-container-user">
                         <button class="btn-notice">
                             <span>
@@ -61,6 +63,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <a class="nav-link active format-name-user">William Shakespeare</a>
                 </ul>
             </div>
         </div>
