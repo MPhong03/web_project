@@ -21,11 +21,11 @@
         <img class="img-fluid h-100" src="../assets/Images/ad-form.gif" alt="adv">
       </div>
 
-      <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center" style="background-color: #b0d4b8;">
-      <form id="form" action="../../../src/Controllers/C_Register.php" method="post" enctype="multipart/form"class="needs-validation" novalidate>
+      <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center pt-5" style="background-color: #b0d4b8;">
+      <form id="form" action="../../../src/Controllers/C_Register.php" method="post" enctype="multipart/form" class="needs-validation w-75" novalidate>
           <input type='hidden' name='SignIn' value='true'>
           <h1 class="text-left"><a style="text-decoration:none;color:black;" href="../../../index.php">SEEKER</a></h1>
-          <h1 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h1><br>
+          <h3 class="text-left">BẠN TÌM - CHÚNG TÔI CÓ</h3><br>
           <div class="form-group">
             <label for="username">Tài khoản</label>
             <input name="taikhoan" type="text" class="form-control forTV" id="username" required>
@@ -75,7 +75,7 @@
           </div>
 
           <div class="">
-            <div class="signup_link">Bạn đã có tài khoản? <a href="./C_SignIn.php">Đăng nhập</a>
+            <div class="signup_link mt-4">Bạn đã có tài khoản? <a class="btn btn-outline-dark ms-1" href="./C_SignIn.php">Đăng nhập</a>
             </div><br>
 
           </div>
