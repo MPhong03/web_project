@@ -1,6 +1,8 @@
 <div class="content-2" id="content-2">
+	<!-- Show công việc -->
 	<div class="container container-content-2" style="margin-top:30px;">
 		<div class="row">
+			<!-- LEFT -->
 			<div class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-content2-left">
 				<div class="row">
 					<div class="ds-row" id="showJob">
@@ -162,7 +164,8 @@
 					</div>
 				</div>
 			</div>
-
+			
+			<!-- RIGHT -->
 			<div class="d-none d-md-block col-md-5 col-lg-6 col-xl-7 col-content2-right col-content2-right-a11yFix" id="col-centent2-right-scroll">
 				<div class="row">
 					<div class="col-sm-12 col-content2-right-above">
