@@ -92,12 +92,13 @@ class Model_updateUser{
 
     public function checkOTP($email, $otp) {
         require("../connection.php");
-        $sql = $conn -> query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email' AND otp = '$otp';");
-        if($sql) {
-            return $sql;
+        $sql = $conn->query("SELECT * FROM TaiKhoanNguoiTimViec WHERE email = '$email' AND otp = '$otp'");
+        if ($sql && $sql->num_rows > 0) {
+            return true; // the query succeeded and found a matching row
         } else {
-            die("Update fail");
+            return false; // the query failed or no matching row was found
         }
     }
+    
 
 }

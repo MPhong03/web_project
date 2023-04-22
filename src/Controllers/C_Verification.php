@@ -8,7 +8,7 @@
     
         // Kiểm tra xem mã OTP có đúng không
         if (!$model->checkOTP($email, $otp)) {
-            echo "Mã OTP không đúng";
+            header("Location: ../Controllers/C_SignIn.php");
             exit();
         } else {
             header("Location: ../Views/layouts/SetPassword.php?email=" . urlencode($email));
