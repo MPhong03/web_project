@@ -1,4 +1,6 @@
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
     require_once("../Models/Model_updateUser.php");
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,12 +23,29 @@
         }
     
         // Gửi email chứa mã OTP đến địa chỉ email của người dùng
-        // Function: mail($to ,$subject ,$message, [$headers], [$parameters]);
-        $to = $email;
-        $subject = "[SEEKER] Mã OTP để đặt lại mật khẩu";
-        $message = "Mã OTP của bạn là: $otp";
-        $headers = "From: SEEKER \r\n";
-        mail($to, $subject, $message, $headers);
+
+        require 'phpmailer/src/Exception.php';
+        require 'phpmailer/src/PHPMailer.php';
+        require 'phpmailer/src/SMTP.php';
+
+        $mail = new PHPMailer(true);
+
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'mnhfony@gmail.com';
+        $mail->Password = 'yvywjbnfkvyhuwgo';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        $mail->setFrom('mnhfony@gmail.com', 'SEEKER Robot');
+        $mail->addAddress($email);
+
+        $mail->isHTML(true);
+        $mail->Subject = 'VERIFICATION EMAIL';
+        $mail->Body    = "<h1>Mã OTP của bạn là: $otp</h1>";
+
+        $mail->send();
     
         // Chuyển hướng người dùng đến trang xác nhận OTP
         header("Location: ../Views/layouts/Verification.php?email=" . urlencode($email));
