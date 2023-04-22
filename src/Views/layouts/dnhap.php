@@ -15,18 +15,19 @@ class FormLogin
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
-      <!-- My CSS and JQuery -->
+      <!-- CSS and JQuery -->
       <link href="../assets/Styles/style.css" rel="stylesheet">
     </head>
 
     <body>
       <div class="container-fluid">
         <div class="row justify-content-center">
-
+          <!-- LEFT: image -->
           <div class="col-md-6 col-lg-6 d-none d-md-block vh-100">
             <img class="img-fluid h-100" src="../assets/Images/ad-form.gif" alt="adv">
           </div>
 
+          <!-- RIGHT: FORM -->
           <div class="col-md-6 col-lg-6 d-flex justify-content-center align-items-center vh-100" style="background-color: #b0d4b8;">
             <form action="../Controllers/C_SignIn.php" method="post" enctype="multipart/form" class="needs-validation w-75" novalidate>
               <input type='hidden' name='SignIn' value='true'>
@@ -50,18 +51,9 @@ class FormLogin
                 </select>
               </div><br>
 
-              <!-- <div class='form-group form-check'>
-                <input type='checkbox' name='remember' value='1' class='form-check-input' id='exampleCheck1'>
-                <label class='form-check-label' for='exampleCheck1'>Remember me</label>
-              </div> -->
-
               <div class="d-grid gap-2">
                 <button class="mx-auto btn btn-dark fa-lg mb-3" type="submit">Đăng nhập</button>
               </div>
-
-              <!-- <div class="offset-sm-4">
-                <button type="submit" class="mx-auto">Đăng nhập</button>
-              </div> -->
               
               <div class="pass">
                 <a href="../Views/layouts/Authentication.php">Quên mật khẩu?</a>
@@ -76,6 +68,7 @@ class FormLogin
           </div>
         </div>
       </div>
+
       <script>
         // Disable form submissions if there are invalid fields
         (function() {
@@ -96,6 +89,7 @@ class FormLogin
           }, false);
         })();
       </script>
+
     </body>
 
     </html>
