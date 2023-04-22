@@ -2,20 +2,19 @@
   <!-- Section: Social media -->
   <section
     class="container-footer d-flex justify-content-center justify-content-lg-between align-items-center pt-4 px-4">
-    <!-- Left -->
+    <!-- LEFT: Logo -->
     <div class="me-5 d-lg-block d-none">
       <img class="me-2" src="../../../src/assets/Images/logo.png" alt="logo" height="80" width="80">
-      <!-- <span style="font-size: 24px">SEEKER</span> -->
     </div>
 
-    <!-- Middle -->
+    <!-- MIDDLE: Thông tin -->
     <div>
       <p class="m-0">© 2014 - 2023 Công ty cổ phần Seeker Việt Nam <br>
         Trụ sở chính: 19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP. Hồ Chí Minh
       </p>
     </div>
 
-    <!-- Right -->
+    <!-- RIGHT: Social Media -->
     <div>
       <h5 class="text-center text-white me-3 d-lg-block d-none">KẾT NỐI VỚI SEEKER</h5>
       <div class="d-flex justify-content-center align-items-center d-lg-block d-none">
