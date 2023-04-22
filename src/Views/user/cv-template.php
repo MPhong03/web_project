@@ -189,18 +189,18 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center ">
-            <div class="col-lg-3 text-center mt-4">
+            <!-- <div class="col-lg-3 text-center mt-4">
                 <button class="save-cv btn px-3 py-3" type="button"><i class="bi bi-card-text"></i>&#160 Lưu CV</button>
-            </div>
+            </div> -->
             <div class="col-lg-3 text-center mt-4">
-                <button class="down-cv btn px-3 py-3" id="pdf-cv" type="button"><i class="bi bi-box-arrow-down"></i>&#160 Lưu và Tải xuống</button>
+                <button class="down-cv btn px-3 py-3" id="pdf-cv" type="button"><i class="bi bi-box-arrow-down"></i>&#160 Tải xuống</button>
             </div>
             <div class="col-lg-3 text-center mt-4">
                 <button class="more-cv btn px-3 py-3" id="trans-cv" type="button"><i class="bi bi-arrow-right"></i>&#160 Xem thêm mẫu</button>
             </div>
         </div>
         <?php
-  require_once("../../../src/Views/layouts/app/footer.php");
+            require_once("../../../src/Views/layouts/app/footer.php");
         ?>
     </div>
     <script src="../../../src/assets/Scripts/navbar.js"></script>

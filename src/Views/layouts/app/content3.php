@@ -13,7 +13,7 @@
 										</div>
 
 										<div class="col-lg-8">
-											<h5 class="card-title format-text-bold">Lập trình BlockChain</h5>
+											<h5 class="card-title format-text-bold">Lập trình IOT</h5>
 											<h6 class="card-subtitle mb-2">Google</h6>
 											<div class="col-lg-12 d-flex flex-row justify-content-between">
 												<div><i class="bi bi-cash-stack"></i> 10.000.000&nbsp;₫</div>
@@ -26,7 +26,7 @@
 												<span>
 													<i class="bi bi-geo-alt-fill"></i>
 													<span>
-														<span class="card-text">Thành Phố Quãng Nam</span>
+														<span class="card-text">Thành phố Hồ Chí Minh</span>
 													</span>
 												</span>
 											</div>
@@ -52,7 +52,7 @@
 										</div>
 
 										<div class="col-lg-8">
-											<h5 class="card-title format-text-bold">Lập trình nhúng</h5>
+											<h5 class="card-title format-text-bold">Fullstack Developer</h5>
 											<h6 class="card-subtitle mb-2">FPT</h6>
 											<div class="col-lg-12 d-flex flex-row justify-content-between">
 												<div><i class="bi bi-cash-stack"></i> 10.000.000&nbsp;₫</div>
@@ -65,7 +65,7 @@
 												<span>
 													<i class="bi bi-geo-alt-fill"></i>
 													<span>
-														<span class="card-text">Thành Phố Hồ Chí Minh</span>
+														<span class="card-text">Thành phố Hồ Chí Minh</span>
 													</span>
 												</span>
 											</div>
@@ -91,8 +91,8 @@
 										</div>
 
 										<div class="col-lg-8">
-											<h5 class="card-title format-text-bold">quản lí dự án</h5>
-											<h6 class="card-subtitle mb-2">Google</h6>
+											<h5 class="card-title format-text-bold">Quản trị fanpage</h5>
+											<h6 class="card-subtitle mb-2">Facebook</h6>
 											<div class="col-lg-12 d-flex flex-row justify-content-between">
 												<div><i class="bi bi-cash-stack"></i> 10.000.000&nbsp;₫</div>
 												<div>
@@ -104,7 +104,7 @@
 												<span>
 													<i class="bi bi-geo-alt-fill"></i>
 													<span>
-														<span class="card-text">Thành Phố Quãng Nam</span>
+														<span class="card-text">Thành phố Hồ Chí Minh</span>
 													</span>
 												</span>
 											</div>
@@ -130,8 +130,8 @@
 										</div>
 
 										<div class="col-lg-8">
-											<h5 class="card-title format-text-bold">tester</h5>
-											<h6 class="card-subtitle mb-2">facebook</h6>
+											<h5 class="card-title format-text-bold">ReactJS Developer</h5>
+											<h6 class="card-subtitle mb-2">VNG</h6>
 											<div class="col-lg-12 d-flex flex-row justify-content-between">
 												<div><i class="bi bi-cash-stack"></i> 10.000.000&nbsp;₫</div>
 												<div>
@@ -143,7 +143,7 @@
 												<span>
 													<i class="bi bi-geo-alt-fill"></i>
 													<span>
-														<span class="card-text">Thành Phố Nghệ An</span>
+														<span class="card-text">Thành phố Hồ Chí Minh</span>
 													</span>
 												</span>
 											</div>
@@ -182,7 +182,7 @@
 										<span>
 											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>
-												<p class="card-text p-diadiem">Thành Phố Hồ Chí Minh</p>
+												<p class="card-text p-diadiem">Thành phố Hồ Chí Minh</p>
 
 												<div class="col-md-12 col-lg-5 col-ungtuyenngay">
 													<a class="btn btn-dark btn-outline-light btn-ungtuyenngay" tabindex="-1" role="button" href="#">Ứng tuyển ngay</a>
