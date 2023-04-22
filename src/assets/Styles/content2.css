@@ -39,16 +39,6 @@
 		padding: 0 10px;
 	}
 
-	/* .col-diadiem{
-		position: relative;
-
-	}
-	.col-diadiem .fa-map-marker{
-		position: absolute;
-		top: 5px;
-		bottom: 0px;
-		font-size: 17px;
-	} */	
 	.p-diadiem{
 		margin-left:5px;
 		font-size: 18px;
@@ -67,19 +57,9 @@
 	.col-img-text{
 		display: flex;
 	}
-	/* .col-img img{
-		width: 50px; 
-		height: 50px;
-	} */
-	/* .col-text{
-		margin-left: 20px;
-	} */
 
-	
-	
 	/*css content-2 right*/
 	.col-content2-right{
-		/* border: 2px solid rgba(0,0,0,.125); */
 		border-radius: 10px;
 		border-top: 1px solid rgba(0,0,0,.125);
 		border-left: 1px solid rgba(0,0,0,.125);
@@ -92,12 +72,7 @@
 		position: -webkit-sticky!important;
 		top: 80px;
 	}
-	/* .col-content2-right-a11yFix{
-		position: sticky!important;
-		position: -webkit-sticky!important;
-		top: 1rem
-	} */
-	
+
 	.ds-row{
 		padding-right: 30px;
 	}
