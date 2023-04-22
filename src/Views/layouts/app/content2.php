@@ -1,67 +1,34 @@
 <div class="content-3" id="content-3">
-  <div class="brands" id="brands">
-    <div class="container pt-0">
-      <div class="row">
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
+  <!-- Hộp tìm kiếm -->
+  <div class="box-find container pt-5 pb-3">
+    <div class="col-sm-12 col-md-12 col-xl-12 mg-search-form" role="search">
+      <div class="search-form" id="jobsearch">
+            <div class="input-group form-container mb-3">
+              <span class="input-group-text text-tiemkiem" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+              <input id="myInput" type="text" name="search-work" class="form-control search-input"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value
+                placeholder="Tên công ty, từ khóa.." autocomplete="off">
+              <!-- <span><i class="bi bi-search" aria-hidden="true"></i></span> -->
+            </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
+            <div class="input-group form-container mb-3">
+              <span class="input-group-text text-diadiem" id="inputGroup-sizing-default"><i class="bi bi-map"></i></span>
+              <input id="myInput1" type="text" name="search-location" class="form-control search-input"
+                placeholder="Địa điểm (thành phố, tỉnh..)" autocomplete="off">
+              <!-- <span><i class="bi bi-map" aria-hidden="true"></i><span> -->
+            </div>
 
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-          <img src="../../../src/assets/Images/brand-tdt.png" class="img-fluid" alt="">
-        </div>
+            <a href="#showJob" style="text-decoration: none; color:white;">
+              <button onclick="searchFilterFromUser()" name="search-main" value="1"
+                class="btn btn-dark btn-timviec w-100 p-2" tabindex="-1" role="button" type="submit">
+                Tìm Việc Ngay
+              </button>
+            </a>
       </div>
     </div>
   </div>
-  
-  <div id="box-find" class="box-find mt-4 mg-search-form" role="search">
-    <div class="container pt-3 pb-5">
 
-      <form action="" class="search-form" id="jobsearch" method="get">
-        <div class="row inline-search-form">
-          <div class="col-sm-12 seach-box">
-            <div class="input-group form-container mb-3">
-              <span class="input-group-text text-tiemkiem" id="inputGroup-sizing-default">
-                <i class="bi bi-search"></i>
-              </span>
-              <input class="form-control myInputSearch" id="myInput2" type="text" autocomplete="off" placeholder="Search..">
-              <!-- <span><i class="fa fa-search" aria-hidden="true"></i></span> -->
-            </div>
-          </div>
-          <div class="col-sm-12 seach-box">
-            <div class="input-group form-container mb-3">
-              <span class="input-group-text text-diadiem" id="inputGroup-sizing-default">
-                <i class="bi bi-map"></i>
-              </span>
-              <input id="myInput1" type="text" name="search-location" class="form-control search-input"
-                placeholder="Địa điểm" autocomplete="off">
-              <!-- <span><i class="fa fa-map-marker" aria-hidden="true"></i><span> -->
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <button class="btn btn-dark form-control-plaintext text-center btn-timviec w-100" tabindex="-1" role="button" type="submit">Tìm
-              Việc Ngay</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-
+  <!-- Filter tìm kiếm -->
   <div class="container container-content-3">
     <div class="row">
       <div class="col-12">
@@ -93,13 +60,11 @@
                 <li class="filter-dropdownlistItem">
                   <div class="filter-dropdownlistitemLink">Tất cả</div>
                 </li>
-                <!-- <li class="filter-dropdownlistItem">
-                  <div class="filter-dropdownlistitemLink">Kinh tế</div>
-                </li> -->
               </ul>
 
             </div>
           </div>
+
           <div class="filter-dropdown">
             <div class="filter-dropdown-container">
               <button class="btn-filter-dropdown" id="btn-filterdropdown1" aria-haspopup="true" aria-expanded="false"
@@ -123,12 +88,10 @@
                 <li class="filter-dropdownlistItem">
                   <div class="filter-dropdownlistitemLink">Tất cả</div>
                 </li>
-                <!-- <li class="filter-dropdownlistItem">
-                  <div class="filter-dropdownlistitemLink">200.000.000đ/tháng</div>
-                </li> -->
               </ul>
             </div>
           </div>
+
           <div class="filter-dropdown">
             <div class="filter-dropdown-container">
               <button class="btn-filter-dropdown" id="btn-filterdropdown2" aria-haspopup="true" aria-expanded="false"
@@ -152,12 +115,10 @@
                 <li class="filter-dropdownlistItem">
                   <div class="filter-dropdownlistitemLink">Tất cả</div>
                 </li>
-                <!-- <li class="filter-dropdownlistItem">
-                  <div class="filter-dropdownlistitemLink">Bán thời gian</div>
-                </li> -->
               </ul>
             </div>
           </div>
+
           <div class="filter-dropdown">
             <div class="filter-dropdown-container">
               <button class="btn-filter-dropdown" id="btn-filterdropdown3" aria-haspopup="true" aria-expanded="false"
@@ -180,12 +141,10 @@
                 <li class="filter-dropdownlistItem">
                   <div class="filter-dropdownlistitemLink">Tất cả</div>
                 </li>
-                <!-- <li class="filter-dropdownlistItem">
-                  <div class="filter-dropdownlistitemLink">Hà Nội</div>
-                </li> -->
               </ul>
             </div>
           </div>
+
           <div class="filter-dropdown-icon">
             <button class="btn-filter-dropdown" id="btn-filterdropdown4" aria-haspopup="true" aria-expanded="false"
               aria-controls="filter-menu4" onclick="btnFilter(getFilterFromUser)">
