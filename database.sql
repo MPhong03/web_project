@@ -142,8 +142,7 @@ INSERT INTO `nguoitimviec` (`MaNguoiTimViec`, `hoten`, `linkava`, `congviec`, `n
 (2, 'Dương Đình Chí Long', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Thắng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php'),
 (3, 'Phạm Nhật Quỳnh', '../../../src/assets/Images/avaClient/18-F3.png', 'Lập trình viên', '2000-01-01', 1, 0, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Thắng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', 'php'),
 (4, 'Lê Gia Huy', '../../../src/assets/Images/avaClient/avatar.jpg', 'Lập trình viên', '2003-01-01', 1, 1, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Tháng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',php,java'),
-(5, 'Nguyễn Thành Đô', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Thắng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php'),
-(6, 'Người tìm việc', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Thắng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php');
+(5, 'Nguyễn Thành Đô', '../../../src/assets/Images/avaClient/dummy_team_member.png', 'Lập trình viên', '2003-01-01', 1, 1, 'Công nghệ - thông tin', 'Thành phố Hồ Chí Minh', 'Tôn Đức Thắng', 'Something...', 'Something...', 'Something...', 'Something...', 'Something...', ',java,php');
 
 INSERT INTO `taikhoancongty` (`MaCongTy`, `TenDangNhap`, `matkhau`, `sdt`, `email`) VALUES
 (4, 'facebook', '123456', '0123456789', 'facebook@gmail.com'),
@@ -157,6 +156,5 @@ INSERT INTO `taikhoannguoitimviec` (`MaNguoiTimViec`, `TenDangNhap`, `matkhau`, 
 (4, 'giahuy', '123456', '0123456789', 'legiahuy@gmail.com'),
 (1, 'minhphong', '123456', '0123456789', 'dangminhphong@gmail.com'),
 (3, 'nhatquynh', '123456', '0123456789', 'phamnhatquynh@gmail.com'),
-(5, 'thanhdo', '123456', '0123456789', 'nguyenthanhdo@gmail.com'),
-(6, 'user', '123456', '0123456789', 'user@gmail.com');
+(5, 'thanhdo', '123456', '0123456789', 'nguyenthanhdo@gmail.com');
 
