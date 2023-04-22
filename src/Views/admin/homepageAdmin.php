@@ -33,7 +33,7 @@ require("check.php");
 	<link rel="stylesheet" href="../../assets/Styles/reponsive.css">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Find Work</title>
+	<title>SEEKER</title>
 </head>
 
 <body>
