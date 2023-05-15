@@ -139,8 +139,7 @@ function getFilterFromUser(linhvuc, luong, loaicongviec, thanhpho) {
       thanhpho: thanhpho,
     }).done(function (data, status) {
       data = JSON.parse(data);
-      console.log(data);
-      console.log(status);
+      console.log("test filter: " + data);
       if (status) {
         show_data(data);
         show_detail_data(data);

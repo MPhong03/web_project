@@ -200,13 +200,6 @@ function autocomplete(inp, arr) {
         }
       }
 
-      function changeLink(){
-          if(window.location == "http://localhost:3000/nguoitimviecdathich.php")
-          { 
-            window.location.href = 'http://localhost:3000/pageinfouser.php';
-          }
-      }
-
 $(document).scroll(function(){
   let heigh = $(window).height()-65
   if ($(window).scrollTop()>=heigh)
